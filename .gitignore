@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.DS_Store
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local tooling / editor state
+.playwright-mcp/
+.sixth/
+tmp_pdf_images/
+vite.config.js.timestamp-*.mjs
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

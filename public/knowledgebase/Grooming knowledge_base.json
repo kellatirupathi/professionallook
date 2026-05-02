@@ -1,0 +1,1763 @@
+{
+  "_meta": {
+    "version": "2.0.0",
+    "last_updated": "2026-04-25",
+    "source": "RL Creates Magic (Rashi Lohade) + ICBI public methodology + Color Me Beautiful 12-season + Kibbe body types + standard tailoring conventions",
+    "fill_status": "PRODUCTION-READY. All TODOs filled per industry standard. Rashi to validate against her trained eye before scale rollout.",
+    "frameworks_referenced": [
+      "ICBI (Image Consulting Business Institute) - Suman Agarwal - public methodology",
+      "Color Me Beautiful 12-season system (Carole Jackson) - adapted for Indian skin",
+      "Kibbe body type system",
+      "Savile Row tailoring fit standards",
+      "Indian National Institute of Fashion Technology (NIFT) silhouette standards"
+    ],
+    "instructions": "All recommendations route through this KB. AI orchestrator must validate output against language_safety_rules. Never invent recommendations beyond this KB."
+  },
+
+  "women": {
+    "body_shapes": {
+      "triangular": {
+        "display_name": "Triangular (Pear)",
+        "identification_rule": "Hips wider than shoulders by 5%+; defined waist; weight tends to settle on hips, thighs, lower body",
+        "goal": "Balance silhouette by adding volume to upper body and drawing attention upward",
+        "necklines_flatter": ["V-neck", "Scoop neck", "Boat neck", "Sweetheart", "Square neck", "Off-shoulder"],
+        "necklines_avoid": ["High neck", "Turtle neck", "Mock neck", "Halter that minimizes upper width"],
+        "sleeves_flatter": ["Puff sleeves", "Statement sleeves", "Ruffles", "Layered details", "Cap sleeves with embellishment", "Bell sleeves", "Bishop sleeves"],
+        "sleeves_avoid": ["Plain tight sleeves", "Sleeveless without shoulder detail (may exaggerate ratio)"],
+        "tops_flatter": ["Embroidered yoke", "Boat neck blouses", "Wrap tops", "Structured shoulder tops", "Peplum tops", "Tops with horizontal details on top half"],
+        "tops_avoid": ["Tight clingy tops", "Deep V that draws eye downward to hip", "Tops ending at widest hip point"],
+        "bottoms_flatter": ["Palazzo pants", "Wide-leg pants", "Straight-leg pants", "Sharara/Flared pants", "Bootcut", "A-line skirts"],
+        "bottoms_avoid": ["Skinny jeans", "Pencil cuts emphasizing hip", "Low-rise", "Cargo with hip pockets", "Heavy detailing on hip/thigh"],
+        "rise": "High or mid-rise preferred; sits at natural waist for definition",
+        "dress_silhouettes": ["Fit and flare", "A-line", "Wrap dress", "Empire waist", "Sheath with structured shoulders"],
+        "kurti_silhouettes": ["Anarkali", "A-line", "Empire waist", "Flared", "Panelled"],
+        "kurti_styles_avoid": ["Very tight fitting kurtis", "Heavy prints on lower half", "Low-waist styles", "Body-hugging straight cuts"],
+        "saree_drape_styles": ["Nivi (standard)", "Belted with pallu over shoulder", "Bengali drape with detailed pallu", "Front-pleated pallu styles"],
+        "saree_blouse": "Boat neck or sweetheart with detail; puff or statement sleeves; embroidered yoke; structured shoulders preferred",
+        "dupatta_drapes": ["Drape over one shoulder (slimming)", "Long & flowy down both sides (volume up top)", "Belted at waist (defines)"],
+        "blazer_cuts": ["Tailored single-breasted with slight structure", "Hip-length or slightly longer (covers widest point)", "Defined waist", "Structured shoulders"],
+        "blazer_avoid": ["Boxy fits", "Cropped that ends at hip", "Very long that covers without defining"],
+        "fabrics_flatter": ["Light to medium weight", "Cotton", "Georgette", "Chiffon", "Crepe", "Rayon", "Silk blends"],
+        "fabrics_avoid": ["Stiff heavy fabrics on lower half", "Clingy lower body fabrics", "Bulky knits on hip"],
+        "patterns_flatter": ["Prints/embroidery on top", "Solid darker bottoms", "Vertical stripes on bottom", "Bold prints above waist"],
+        "patterns_avoid": ["Heavy prints on lower half", "Horizontal stripes on hips", "Large motifs at hip level"],
+        "color_strategy": "Lighter/brighter colors on top, darker monochrome on bottom; statement colors above waist; create vertical color flow",
+        "belt_strategy": "Belts at natural waist or just above to define hourglass illusion; tie-waist tops; fitted blazers with belted cinch; medium-width belts (1.5-2 inches)",
+        "footwear_flatter": ["Pointed-toe heels", "Block heels", "Pointed flats", "Almond toe", "Nude/skin-tone heels (elongate leg)"],
+        "footwear_avoid": ["Ankle-strap heels (cuts leg line)", "Round-toe chunky shoes", "T-strap shoes"],
+        "bag_shapes": ["Structured bags", "Statement bags carried at upper body", "Top-handle bags worn high"],
+        "earring_shapes": ["Statement earrings", "Long drops drawing eye to face", "Chandelier earrings", "Geometric drops"],
+        "necklace_strategy": "Statement necklaces; long pendants on bare neck; layered chains for daily",
+        "overall_tips": [
+          "Highlight upper body and face",
+          "Define waist clearly",
+          "Choose well-fitted structured pieces",
+          "Keep bottoms simple, streamlined and tailored",
+          "Avoid hip-emphasizing details"
+        ],
+        "quick_tip": "Balance is the key — highlight your beautiful upper body, define your waist, and keep your lower half sleek and simple."
+      },
+
+      "inverted_triangular": {
+        "display_name": "Inverted Triangular (Athletic V)",
+        "identification_rule": "Shoulders wider than hips by 5%+; broad shoulders or fuller bust; narrow hips",
+        "goal": "Balance broader shoulders by drawing attention downward and adding volume to the lower half",
+        "necklines_flatter": ["V-neck (deep)", "Scoop", "Sweetheart", "U-neck", "Halter (paradoxically narrows shoulder line visually)"],
+        "necklines_avoid": ["Boat neck (widens shoulders)", "Bardot/off-shoulder", "Wide-collared", "Heavy embellishment at shoulders", "Square necks that emphasize width"],
+        "sleeves_flatter": ["Cap sleeves (subtle)", "Set-in sleeves with no padding", "3/4 fitted sleeves", "Raglan (softens shoulder line)"],
+        "sleeves_avoid": ["Heavy shoulder pads", "Puff/balloon sleeves at shoulder", "Cap sleeves that emphasize shoulder width", "Boxy sleeves", "Off-shoulder ruffles"],
+        "tops_flatter": ["Embroidered necklines (drawing eye to center)", "Yoke or patterned kurtis with center detail", "Wrap tops with V opening", "Empire-waist tops"],
+        "tops_avoid": ["Boxy fits", "Heavy shoulder details", "Horizontal stripes across chest", "Statement collars"],
+        "bottoms_flatter": ["Wide-leg trousers", "Straight-leg", "Slightly flared", "Palazzo pants", "Flared pants", "Sharara/Gharara", "A-line skirts", "Pleated trousers"],
+        "bottoms_avoid": ["Skinny jeans (emphasize narrow hips)", "Tapered pants", "Pencil skirts that minimize lower body"],
+        "rise": "Mid-rise; structured fabrics; defined waistband",
+        "dress_silhouettes": ["A-line", "Fit and flare with full skirt", "Empire waist", "Drop-waist with full bottom", "Trumpet"],
+        "kurti_silhouettes": ["A-Line", "Anarkali", "Empire waist with flared bottom", "Flared", "Panelled with flare"],
+        "kurti_styles_avoid": ["Boxy straight kurtis", "Cropped kurtis"],
+        "saree_drape_styles": ["Lightweight fabric sarees", "Lehenga-style drape (adds lower volume)", "Heavy borders at hem (draws eye down)", "Pleated front panel detail"],
+        "saree_blouse": "V-neck or sweetheart; minimal shoulder detail; 3/4 sleeves; no shoulder embellishment",
+        "dupatta_drapes": ["Layer with jackets or shrugs (adds depth without shoulder width)", "Belts or cinched waists (defines middle)", "Long flowy down center"],
+        "blazer_cuts": ["Single-breasted (no double-breasted shoulder bulk)", "Cinched waist", "Soft/no shoulder padding", "Hip-length", "Waterfall jackets (vertical lines)"],
+        "blazer_avoid": ["Padded shoulder", "Double-breasted with strong shoulder", "Cropped jackets", "Boxy oversized"],
+        "fabrics_flatter": ["Lightweight on top", "Structured on bottom", "Stiff fabrics for lower volume (cotton, taffeta, organza)"],
+        "fabrics_avoid": ["Heavy stiff fabrics on top", "Padded materials"],
+        "patterns_flatter": ["Prints/details on lower half", "Solid tops in deeper colors", "Vertical center detail", "Border prints at hem"],
+        "patterns_avoid": ["Horizontal stripes on shoulders", "Bold prints on top", "Large shoulder embellishment"],
+        "color_strategy": "Darker shades on top, brighter/patterned/lighter colors on bottom; create downward color flow",
+        "belt_strategy": "Cinched waists, belts, or fitted blazers create hourglass illusion; medium-width belt at natural waist",
+        "footwear_flatter": ["Heels with structure", "Block heels", "Wedges (add lower visual weight)", "Statement shoes with detail"],
+        "footwear_avoid": ["Pointed thin stilettos (emphasize narrow hips)", "Minimalist flats"],
+        "bag_shapes": ["Structured bags carried at hip level", "Slouchy hobos at hip", "Statement clutch held low"],
+        "earring_shapes": ["Drop earrings (vertical line)", "Studs (don't draw eye to shoulders)"],
+        "necklace_strategy": "Long pendants drawing eye down center; avoid statement collar necklaces",
+        "overall_tips": [
+          "Emphasize the lower half",
+          "Add volume below the waist",
+          "Define waist with belts and cinches",
+          "Avoid all shoulder embellishments",
+          "Keep top half visually quiet"
+        ],
+        "quick_tip": "Add volume below, keep volume off shoulders. A wide-leg trouser with a fitted V-neck top is your power formula."
+      },
+
+      "rectangular": {
+        "display_name": "Rectangular (Athletic / Banana)",
+        "identification_rule": "Shoulders, waist, and hips are similar (variance ≤5%); minimal waist definition",
+        "goal": "Create the illusion of curves, define the waist, and add softness with details, layers, and drapes",
+        "necklines_flatter": ["V-Neck", "Scoop Neck", "Sweetheart", "Cowl neck (adds softness)", "Boat Neck", "Off-shoulder"],
+        "necklines_avoid": ["High necks", "Turtle necks", "Crew necks (too straight)", "Very straight necklines"],
+        "sleeves_flatter": ["Ruffle/Frill details", "Puff sleeves", "Bell sleeves", "Statement sleeves", "Tiered sleeves"],
+        "sleeves_avoid": ["Plain tight sleeves with no detail"],
+        "tops_flatter": ["Wrap tops", "Peplum tops", "Ruffle/Frill detail tops", "Puff sleeve tops", "Fitted tops with belt", "Bustier-style with structure"],
+        "tops_avoid": ["Boxy/oversized fits", "Straight drapes", "Shapeless tunics"],
+        "bottoms_flatter": ["Wide-leg pants", "Flared pants", "Straight-leg pants", "Paperbag waist pants", "A-line skirts", "Pleated skirts", "High-waisted with detail"],
+        "bottoms_avoid": ["Very low-rise", "Extremely baggy bottoms", "Boxy cargo"],
+        "rise": "High-waisted (creates waist illusion)",
+        "dress_silhouettes": ["Wrap dresses", "Fit and flare dresses", "Shirt dresses", "Ruched dresses", "Belted shift dresses"],
+        "kurti_silhouettes": ["Anarkali", "Empire waist", "Wrap or overlap", "Tiered", "Panelled", "Flared with belted waist"],
+        "kurti_styles_avoid": ["Straight kurtis", "Boxy oversized fits", "High neck or turtleneck", "Straight drapes"],
+        "saree_drape_styles": ["Soft flowy fabrics (georgette/chiffon/crepe/silk blends/organza)", "Belted sarees (creates waist)", "Ruffled pallu", "Neatly pleated front"],
+        "saree_blouse": "Sweetheart or scoop; ruffled or peplum; 3/4 sleeves with detail; padded for bust illusion if desired",
+        "dupatta_drapes": ["Single side drape", "Both sides drape", "Loop drape", "Long & flowy drape", "Belted dupatta"],
+        "dupatta_avoid": ["Stiff or very straight draping"],
+        "blazer_cuts": ["Belted blazer", "Fitted blazer", "Double-breasted blazer with cinched waist", "Waterfall jacket", "Peplum blazer"],
+        "blazer_avoid": ["Boxy or oversized that hides waistline", "Straight-cut blazers"],
+        "fabrics_flatter": ["Soft flowing fabrics", "Medium-weight cotton", "Georgette", "Chiffon", "Crepe"],
+        "fabrics_avoid": ["Stiff structural fabrics", "Heavy boxy materials"],
+        "patterns_flatter": ["Florals", "Vertical stripes", "Textures", "Border prints with horizontal interest at bust"],
+        "patterns_avoid": ["Plain straight panels"],
+        "color_strategy": "Play with colors, prints & accessories to add personality and break the straight line; color-block at the waist for definition",
+        "belt_strategy": "Define waist with belts (medium width 1.5-2 inches), tie-ups, fitted styles; layering adds dimension and curves",
+        "footwear_flatter": ["Pointed-toe heels", "Strappy heels", "Block heels", "Nude or minimal flats", "Ankle boots with curve detail"],
+        "bag_shapes": ["Curved/round bags (soften lines)", "Slouchy hobos", "Bucket bags"],
+        "earring_shapes": ["Statement earrings", "Round drops", "Hoops"],
+        "necklace_strategy": "Layered necklaces add dimension; statement pieces work well",
+        "overall_tips": [
+          "Add curves, movement, definition",
+          "Define waist with belts/ties/fitted styles",
+          "Add volume with ruffles/layers/gathers/flared silhouettes",
+          "Play with colors and prints to break straight line",
+          "Soft fabrics over stiff ones"
+        ],
+        "quick_tip": "Your goal is curves and movement. Define your waist, add ruffles or peplums, and you'll create the hourglass illusion that suits you beautifully."
+      },
+
+      "hourglass": {
+        "display_name": "Hourglass",
+        "identification_rule": "Shoulders and hips similar; waist 25%+ smaller than both; defined natural curves",
+        "goal": "Highlight the natural waist, maintain proportion, never hide curves",
+        "necklines_flatter": ["V-neck", "Sweetheart", "Mandarin", "Square neck", "Collared", "Halter", "Wrap necklines"],
+        "necklines_avoid": ["Very high necks that flatten chest", "Boxy boat necks"],
+        "sleeves_flatter": ["Fitted sleeves", "3/4 fitted", "Cap sleeves", "Bell sleeves with structure", "Bishop sleeves cinched at wrist"],
+        "sleeves_avoid": ["Heavy puff sleeves at shoulder", "Bat-wing/dolman that hide shape"],
+        "tops_flatter": ["Straight fit kurtis with side slits", "Waist-defined kurtis (belted or tie-up)", "A-line with subtle embellishments", "Panelled or princess cut kurtis", "Wrap tops", "Bodycon"],
+        "tops_avoid": ["Boxy fits", "Shapeless overly flared styles", "Loose tunics", "Drop-waist styles"],
+        "bottoms_flatter": ["Wide-leg pants", "Straight pants", "Cigarette pants", "Pencil skirts", "Bodycon skirts", "Palazzos (well-fitted at waist)", "High-waisted skinny"],
+        "bottoms_avoid": ["Pleated baggy fits hiding waist", "Drop-waist skirts", "Tailored fits favored over baggy"],
+        "rise": "High or mid-rise that defines waist",
+        "dress_silhouettes": ["Wrap", "Fit and flare", "Sheath", "Bodycon (occasion-dependent)", "Belted", "Mermaid"],
+        "kurti_silhouettes": ["Straight fit with side slits", "Waist-defined", "A-line", "Panelled or Princess Cut"],
+        "kurti_styles_avoid": ["Boxy", "Shapeless", "Overly flared at waist"],
+        "saree_drape_styles": ["Solid sarees with tailored blouses", "Subtle stripes or weaves", "Light embroidered or textured sarees", "Darker tones with elegant borders", "Mermaid drape (special events)"],
+        "saree_blouse": "V-neck, keyhole, collared blazers; well-fitted to highlight curves; tailored fits flatter shape",
+        "dupatta_drapes": ["Neat one side drape", "Both sides drape for balance", "Stole style for power look", "Belted dupatta for definition"],
+        "dupatta_avoid": ["Voluminous or heavy dupattas that hide waist"],
+        "blazer_cuts": ["Fitted at waist (instant executive presence)", "Single-breasted with structured shoulder", "Belted", "Princess seams"],
+        "blazer_avoid": ["Boxy", "Oversized", "Drop-shoulder"],
+        "fabrics_flatter": ["Medium-weight fabrics that drape well", "Cotton", "Tussar", "Linens", "Handlooms", "Georgettes", "Crepes"],
+        "fabrics_avoid": ["Overly shiny", "Heavy embellishments all over", "Excessive layers", "Bulky knits"],
+        "patterns_flatter": ["Minimal embroidery", "Pinstripes", "Subtle weaves", "Curved/wavy patterns"],
+        "patterns_avoid": ["Boxy geometric prints", "Large block patterns that fight curves"],
+        "color_strategy": "Jewel tones, earthy hues, pastels & classic neutrals; monochromatic for elongated power look",
+        "belt_strategy": "Use belts, tie-ups, structured cuts or nipped-in styles to highlight natural waist; thin belts to medium-width",
+        "footwear_flatter": ["Closed-toe heels", "Pumps", "Pointed-toe", "Curved heels"],
+        "bag_shapes": ["Classic structured handbags", "Medium-sized (proportionate to curves)"],
+        "earring_shapes": ["Studs or hoops", "Drop earrings", "Curved/teardrop shapes"],
+        "necklace_strategy": "Minimal necklaces; pendants that follow neckline curve",
+        "overall_tips": [
+          "Always define the waist",
+          "Choose structured or semi-structured silhouettes",
+          "Quality fabrics and impeccable tailoring",
+          "Keep accessories minimal, elegant and purposeful",
+          "Never hide your shape — fitted always wins"
+        ],
+        "quick_tip": "Tuck in to highlight the waist. A blazer that nips at the waist = instant executive presence."
+      },
+
+      "diamond": {
+        "display_name": "Diamond (Apple)",
+        "identification_rule": "Midriff is widest; shoulders & hips narrower; weight settles around midsection",
+        "goal": "Minimize midsection, enhance shoulders and hips, create balanced professional silhouette",
+        "necklines_flatter": ["Open neck", "V-neck (deep)", "Scoop", "Sweetheart", "Surplice/wrap neckline"],
+        "necklines_avoid": ["Stiff or boxy structures", "Very high necks", "Crew necks"],
+        "sleeves_flatter": ["3/4 sleeves with definition", "Cap with shoulder detail", "Set-in sleeves", "Slight puff at shoulder (adds shoulder width)"],
+        "sleeves_avoid": ["Sleeveless if upper arms are concern", "Tight sleeves at midsection length"],
+        "tops_flatter": ["Drape flowy fabrics that skim over midsection", "Wrap tops", "Tie-up tops", "Peplum tops (from below bust)", "Empire-waist tops", "Darker colored shirts"],
+        "tops_avoid": ["Stiff shirts that cling at midsection", "Cropped tops", "Tucked-in styles", "Belted at natural waist (emphasizes width)"],
+        "bottoms_flatter": ["Softly structured trousers that skim waist", "Single-breasted hip-length silhouettes", "Belted or textured trousers in lighter fabrics", "Wide-leg with high rise", "Bootcut"],
+        "bottoms_avoid": ["Tight at waist", "Low-rise that emphasizes midsection bulge"],
+        "rise": "High mid-rise that defines waist subtly without cinching",
+        "dress_silhouettes": ["A-line that flares from below bust", "Empire waist", "Wrap dresses with flow", "Shift dresses with structured shoulders"],
+        "kurti_silhouettes": ["A-Line gently flared", "Empire waist kurti", "Peplum kurtis (from below bust)", "Anarkali", "Flared with shoulder detail"],
+        "kurti_styles_avoid": ["Stiffer", "Boxy blazers", "Tight straight kurtis", "Body-hugging at midsection"],
+        "saree_drape_styles": ["Soft flowy fabrics (georgette, chiffon, crepe, silk blends)", "Slightly flared drapes with tailored blouses", "Heavy work or darker shades on upper body", "Lighter shades on upper body create shape", "Belted sarees high above natural waist"],
+        "saree_blouse": "Tailored, fitted; V-neck or scoop; 3/4 sleeve; structured shoulders preferred",
+        "dupatta_drapes": ["Long flowy drapes that elongate", "Single shoulder drape skimming midsection", "Vertical drape down center"],
+        "blazer_cuts": ["Softly structured blazers that skim the waist", "Single-breasted, hip-length, lighter fabrics", "Belted or ruched blazers (above natural waist)", "Shoulder padding for shape", "Open-front draping styles"],
+        "blazer_avoid": ["Stiffer", "Boxy", "Cropped at midsection", "Tightly belted at natural waist"],
+        "fabrics_flatter": ["Soft flowy", "Drape-friendly", "Lightly textured", "Medium-weight that skims"],
+        "fabrics_avoid": ["Stiff structured fabrics that cling at midsection", "Shiny clingy materials", "Heavy knits"],
+        "patterns_flatter": ["Vertical stripes", "Vertical panels", "Embroidery on upper body or vertical panels", "Diagonal patterns"],
+        "patterns_avoid": ["Horizontal stripes at midsection", "Large prints across waist", "Bold midsection embellishments"],
+        "color_strategy": "Darker tones on upper body create shape; vertical color blocks (dark on sides, lighter center vertical strip); subtle balanced palette",
+        "belt_strategy": "If belted, place above natural waist (under bust); narrow belts only; avoid cinching",
+        "footwear_flatter": ["Pumps", "Heels for elongation", "Pointed-toe", "Nude/skin-tone for leg length"],
+        "bag_shapes": ["Structured bags carried at upper body level", "Top-handle worn high", "Shoulder bags worn long (vertical line)"],
+        "earring_shapes": ["Earrings drawing eye up", "Long drops", "Statement studs"],
+        "necklace_strategy": "Long pendants creating vertical line; avoid choker/short necklaces",
+        "overall_tips": [
+          "Balance is key — minimize midsection, focus on shoulders and hips",
+          "Confidence is about subtle shaping that flatters and refines",
+          "Elongate the upper body with vertical lines",
+          "Create shape with layers",
+          "Favor darker and subtle colors at the midsection"
+        ],
+        "quick_tip": "Tuck in to highlight the bust line, not the natural waist. Empire-waist styles are your best friend."
+      },
+
+      "tubular": {
+        "display_name": "Tubular (Straight / Boyish)",
+        "identification_rule": "Tall and narrow throughout; shoulders ≈ waist ≈ hips with minimal width variance; lean frame; minimal natural curves",
+        "goal": "Add visual width and create feminine curves through clothing structure, layers, and details",
+        "necklines_flatter": ["Sweetheart (creates bust illusion)", "Scoop", "V-neck", "Halter", "Off-shoulder", "Bardot"],
+        "necklines_avoid": ["Very high necks (emphasize length)", "Plain crew necks (too straight)"],
+        "sleeves_flatter": ["Puff sleeves", "Bell sleeves", "Bishop sleeves", "Statement sleeves", "Ruffle layered", "Cold-shoulder"],
+        "sleeves_avoid": ["Plain tight set-in sleeves with no detail"],
+        "tops_flatter": ["Peplum tops", "Ruffle layered tops", "Wrap tops with structure", "Belted styles", "Padded structured tops", "Bustier with detail"],
+        "tops_avoid": ["Plain straight T-shirts", "Boxy fits with no detail"],
+        "bottoms_flatter": ["A-line skirts", "Pleated skirts", "Wide-leg trousers", "Flared pants", "Bubble/peplum skirts", "Full skirts"],
+        "bottoms_avoid": ["Skinny jeans (emphasize lack of curve)", "Tight pencil skirts", "Boyish straight cuts"],
+        "rise": "High-waisted to create waist illusion",
+        "dress_silhouettes": ["Fit-and-flare", "A-line", "Peplum", "Wrap dresses with sash", "Princess-line with full skirt", "Drop-waist with full skirt"],
+        "kurti_silhouettes": ["Anarkali (creates volume)", "A-line", "Flared", "Empire waist", "Peplum-style", "Panelled with flare"],
+        "kurti_styles_avoid": ["Straight kurtis", "Body-hugging cuts", "Plain shapeless tunics"],
+        "saree_drape_styles": ["Heavy borders at hem (adds lower volume)", "Lehenga-style drape", "Ruffled pallu", "Pleated front detail", "Belted with wide cummerbund"],
+        "saree_blouse": "Padded/structured; sweetheart or scoop; statement sleeves (puff/bell); embellished for visual interest at bust",
+        "dupatta_drapes": ["Both sides drape (adds upper volume)", "Heavy embellished dupattas", "Stole-style with structure", "Layered draping"],
+        "blazer_cuts": ["Belted (creates waist)", "Peplum blazers", "Double-breasted (adds chest volume)", "Cinched waist with structured shoulders"],
+        "blazer_avoid": ["Boxy straight cuts", "Drop-shoulder", "Oversized"],
+        "fabrics_flatter": ["Stiff cottons", "Taffeta", "Organza", "Structured silks", "Brocade", "Layered chiffons", "Dupioni silk"],
+        "fabrics_avoid": ["Very thin clingy fabrics that fall flat", "Slip-style satins without structure"],
+        "patterns_flatter": ["Horizontal stripes", "Large bold prints", "Ruffle textures", "Bold florals", "Color blocking", "Polka dots"],
+        "patterns_avoid": ["Plain solids without detail", "Tiny prints lost on frame"],
+        "color_strategy": "Color blocking, contrast top/bottom, light/bright colors at hip/bust to create curves; never head-to-toe black (loses shape)",
+        "belt_strategy": "Wide belts (2-3 inches) at natural waist; statement buckles; cummerbunds; sashes; layered belts",
+        "footwear_flatter": ["Block heels", "Wedges", "Ankle-strap heels", "Mary Janes", "T-strap shoes", "Platform sandals"],
+        "footwear_avoid": ["Plain pointed minimalist flats"],
+        "bag_shapes": ["Round/curved bags", "Bucket bags", "Soft hobos with curves", "Slouchy shapes that add visual volume"],
+        "earring_shapes": ["Round hoops", "Chandelier", "Statement studs", "Curved drops"],
+        "necklace_strategy": "Statement chokers add upper body volume; layered necklaces; bib-style for special events",
+        "overall_tips": [
+          "Create curves through structure, layers, and detail",
+          "Belts and waist definition are essential",
+          "Don't be afraid of bold prints and color blocking",
+          "Stiff fabrics work harder for you than soft drapes",
+          "Layer pieces to add visual dimension"
+        ],
+        "quick_tip": "You have model proportions. Use clothing to create the curves: peplum tops, A-line skirts, wide belts."
+      },
+
+      "rounded": {
+        "display_name": "Rounded (Oval / Plus)",
+        "identification_rule": "Fuller throughout with rounded curves; bust and midsection prominent; less defined shoulders and waist; soft overall silhouette",
+        "goal": "Define waist subtly, elongate silhouette, draw eye upward, create vertical lines",
+        "necklines_flatter": ["V-necks (deep)", "Sweetheart", "Scoop", "Embellished necklines that draw eye up", "Surplice/wrap"],
+        "necklines_avoid": ["Boxy boat necks", "Stiff or clingy collars", "Crew necks", "High mock necks"],
+        "sleeves_flatter": ["3/4 sleeves with structure", "Bell sleeves", "Set-in sleeves with flow", "Flared at wrist"],
+        "sleeves_avoid": ["Cap sleeves cutting at fullest arm", "Very tight sleeves", "Sleeveless with clingy cut"],
+        "tops_flatter": ["Wrap tops", "Ruched draped tops (skim midsection)", "Empire-waist tops", "Darker colored shirts (slimming)", "Soft drapey fabrics", "Tunic with subtle waist detail"],
+        "tops_avoid": ["Boxy", "Shapeless", "Clingy shirts", "Cropped tops", "Tight tucked-in styles"],
+        "bottoms_flatter": ["Straight-leg pants", "Bootcut or slim-flare pants", "High-rise trousers (define waist)", "Wide-leg with flow", "A-line maxi skirts"],
+        "bottoms_avoid": ["Low-rise", "Overly tapered or skinny fits", "Tight pencil skirts"],
+        "rise": "High-rise that defines waist gently",
+        "dress_silhouettes": ["Fit and flare from below bust", "Empire waist", "Wrap dresses", "A-line with flow", "Maxi dresses with belt under bust"],
+        "kurti_silhouettes": ["A-Line Kurti (key silhouette)", "Empire Waist Kurti", "Wrap kurtis", "Anarkali", "Flared from below bust"],
+        "kurti_styles_avoid": ["Boxy stiff or clingy kurtis", "Body-hugging straight cuts", "Cropped kurtis"],
+        "saree_drape_styles": ["Structured fabrics that drape close to body (silk, georgette, crepe blends)", "Pleated drape with smooth pallu", "Single-side draped pallu (vertical line)", "Nivi with pleated front"],
+        "saree_blouse": "Structured, well-fitted; V-neck or scoop; padded with support; 3/4 sleeves preferred",
+        "dupatta_drapes": ["Vertical drape down center (elongates)", "Single shoulder drape", "Use belts to define waist when draping"],
+        "blazer_cuts": ["Waist-defined blazers (belted or contoured)", "Single-breasted that nips at waist", "Open-front styles", "Lightly padded shoulders", "Hip-length or longer"],
+        "blazer_avoid": ["Boxy shapeless blazers", "Cropped", "Tightly fitted at midsection without flow"],
+        "fabrics_flatter": ["Structured but not stiff", "Soft drapey wools", "Quality natural fibers", "Crepes", "Heavier silks"],
+        "fabrics_avoid": ["Overly shiny", "Very loose drapes that look bulky", "Clingy lycra blends"],
+        "patterns_flatter": ["Vertical panels", "Vertical stripes (subtle)", "Embroidery on upper body", "Dark on body, lighter accents"],
+        "patterns_avoid": ["Horizontal stripes", "Large all-over busy prints", "Bold checks"],
+        "color_strategy": "Darker tones create slimming effect; vertical detailing and subtle patterns; monochromatic dressing for elongated look",
+        "belt_strategy": "Belt or cinch the waist gently (not tightly); medium-width belt; same-tone-as-outfit belt for subtle definition",
+        "footwear_flatter": ["Pointed-toe pumps (elongating)", "Heels with vertical line", "Knee-high boots with skirts"],
+        "footwear_avoid": ["Ankle straps that cut leg line", "Round chunky shoes"],
+        "bag_shapes": ["Structured medium bags", "Top-handle proportionate to body", "Avoid tiny bags (look smaller in contrast)"],
+        "earring_shapes": ["Vertical drops drawing eye up", "Long earrings", "Linear chandeliers"],
+        "necklace_strategy": "Long pendants creating strong vertical line; avoid choker styles",
+        "overall_tips": [
+          "Tuck in to define the waist (with structured tucks, not tight)",
+          "Open and soft necklines",
+          "Belt or cinch the waist",
+          "Tailored layering",
+          "High-rise bottoms that define waist",
+          "Dark and neutral colors for slimming",
+          "Vertical detailing throughout"
+        ],
+        "quick_tip": "Vertical lines and gentle waist definition are your tools. A-line silhouettes and high-rise bottoms transform your figure beautifully."
+      }
+    }
+  },
+
+  "men": {
+    "body_shapes": {
+      "triangular": {
+        "display_name": "Triangular",
+        "identification_rule": "Hips/waist wider than shoulders; weight settles around middle and lower body",
+        "goal": "Balance silhouette by emphasizing the upper half and adding shoulder presence",
+        "suit_jacket": ["Shoulder-enhancing structured jackets", "Peak lapels", "Bold pocket squares", "Structured shoulder padding", "Hip-length covering widest point"],
+        "shirts": ["Patterned shirts (drawing eye up)", "Spread collars", "Wider ties", "Textured shirts", "Vertical stripes on shirt"],
+        "shirt_collar": ["Spread collars (widens upper visual)", "Cutaway"],
+        "tie_width": "Wider ties (2.75-3 inches)",
+        "tie_avoid": ["Skinny ties under 2.5 inches"],
+        "trouser_cut": ["Slim-cut trousers", "Tapered cuts", "Flat-front (no pleats adding hip volume)"],
+        "trouser_avoid": ["Wide-leg trousers", "Pleated trousers", "Cargo with hip pockets"],
+        "trouser_color": "Dark navy, charcoal, black; darker colors below",
+        "rise": "Mid-rise sitting at natural waist",
+        "belt": "Plain belts; sleek leather; medium-width 1.25-1.5 inches",
+        "footwear": ["Simple shoes", "Oxford or derby in dark colors", "Minimalist styles"],
+        "watch_size": "Larger watch case (42-44mm) — adds wrist presence",
+        "knitwear": ["V-neck sweaters with structure", "Crew necks with shoulder padding", "Layered cardigans"],
+        "patterns_flatter": ["Patterns on upper garments", "Vertical stripes on shirt", "Patterned socks for accent", "Textured ties"],
+        "patterns_avoid": ["Skinny fits below", "Large prints below", "Patterns on trousers"],
+        "color_strategy": "Focus color and detail on upper garments; darker colors below; lighter colored shirts to draw eye up",
+        "fabrics_flatter": ["Textured shirts", "Tweeds for upper body", "Structured wools"],
+        "accessories": ["Large watches", "Bold pocket squares", "Interesting collar and tie values", "Lapel pins", "Pattern socks for visual accent"],
+        "avoid": ["Wide trousers", "Large prints below", "Cropped jackets", "Drop-shoulder fits"],
+        "overall_tips": [
+          "Balance the silhouette by adding upper presence",
+          "Emphasize the upper half with detail and color",
+          "Define waist and hips subtly",
+          "Choose darker colors below",
+          "Focus all color and detail on upper garments"
+        ]
+      },
+
+      "inverted_triangular": {
+        "display_name": "Inverted Triangular (Athletic V)",
+        "identification_rule": "Shoulders much wider than waist (athletic V-shape); broad chest; narrow hips",
+        "goal": "Balance broad shoulders by adding volume to lower body and softening shoulder line",
+        "suit_jacket": ["Unstructured blazers", "Raglan sleeves", "Soft collars", "Avoid shoulder padding", "Single-breasted natural shoulder"],
+        "shirts": ["Open collars", "Revere collars", "Cuban collars", "Knit ties", "V-neck knitwear", "Lighter weight shirts"],
+        "shirt_collar": ["Revere", "Cuban", "Camp collar", "V-neck"],
+        "tie_width": "Knit ties for texture; standard 2.5-2.75 inches; avoid wide ties",
+        "trouser_cut": ["Straight and wide-leg pants", "Pleated trousers (add hip volume)", "Cargo-style office trousers (dressier versions)", "Cuffed bottoms", "Fuller cuts"],
+        "trouser_avoid": ["Skinny jeans", "Tapered slim cuts that emphasize narrow hips"],
+        "trouser_color": "Lighter or textured below to add visual weight; mid-tones",
+        "rise": "Mid to high-rise",
+        "belt": "Belted trousers; standard or wider belts add lower body presence",
+        "footwear": ["Distinctive shoes", "Loafers", "Brogues with character", "Wing-tips", "Statement laces"],
+        "watch_size": "Medium-sized 38-42mm",
+        "knitwear": ["V-neck knitwear", "Cardigans", "Lightweight unstructured pieces"],
+        "patterns_flatter": ["Plaid trousers", "Textured lower body", "Subtle plaid", "Patterned socks", "Vertical patterns on trousers"],
+        "patterns_avoid": ["Heavy shoulder details", "Bold prints on top", "Horizontal stripes on chest"],
+        "color_strategy": "Lighter colors below; add tasteful patterns below; darker subtle tops; create visual flow downward",
+        "fabrics_flatter": ["Textured fabrics on lower body", "Soft drape on top", "Linen", "Light wools"],
+        "accessories": ["Subtle pocket squares", "Belts to define waist", "Distinctive shoes"],
+        "avoid": ["Excessive shoulder padding", "Tight fits on top", "Skinny trousers", "Plain monotone bottoms"],
+        "overall_tips": [
+          "Balance the silhouette downward",
+          "Emphasize the waist subtly",
+          "Add volume below with cuts and patterns",
+          "Choose open collars and textured ties",
+          "Avoid all shoulder padding and structure"
+        ]
+      },
+
+      "rectangular": {
+        "display_name": "Rectangular",
+        "identification_rule": "Shoulders, waist, and hips similar in width; minimal natural taper",
+        "goal": "Create subtle waist definition and add visual dimension through structure and detail",
+        "suit_jacket": ["Tailored waistcoats and layering", "Subtle shoulder padding", "Pocket squares and peak lapels", "Belted blazers with adjustable side tabs", "Three-piece suits"],
+        "shirts": ["Fitted shirts", "Bold textures", "Textured collars and patterns", "Slim-fit cuts"],
+        "shirt_collar": ["Spread collar", "Button-down for texture"],
+        "tie_width": "Standard 2.75 inches",
+        "trouser_cut": ["Flat-front trousers", "Tapered cuts", "Slim-cut trousers", "Patterned trousers"],
+        "trouser_color": "Solid darker colors with subtle pattern accents",
+        "rise": "Mid-rise",
+        "belt": "Belted blazers and adjustable side tabs at waist for definition; standard belt with quality buckle",
+        "footwear": ["Structured shoes", "Oxford", "Brogue", "Cap-toe Derby"],
+        "watch_size": "Medium 40mm",
+        "knitwear": ["V-neck sweaters", "Crew with structure", "Vests for layering"],
+        "patterns_flatter": ["Bold textures", "Patterned trousers", "Textured collars", "Three-piece coordination"],
+        "patterns_avoid": ["Boxy oversized fits", "Plain straight panels"],
+        "color_strategy": "Layer with structure; introduce dimension below; use color to break vertical line",
+        "fabrics_flatter": ["Textured fabrics", "Quality wool", "Tweed", "Herringbone"],
+        "accessories": ["Interesting watch details", "Tailored accessories", "Quality leather briefcases", "Pocket squares for detail"],
+        "avoid": ["Boxy fits", "Shapeless drapes", "Drop-shoulder cuts"],
+        "overall_tips": [
+          "Balance the silhouette with structure",
+          "Choose structured blazers with light padding",
+          "Add definition to the waist",
+          "Define the leg line subtly with tapered cuts",
+          "Opt for fitted shirts and bold textures",
+          "Introduce dimension below with patterns",
+          "Focus on tailoring quality and accessories"
+        ]
+      },
+
+      "diamond": {
+        "display_name": "Diamond",
+        "identification_rule": "Midsection is widest; shoulders and lower body narrower",
+        "goal": "Minimize midsection visually, balance through shoulders and legs, create vertical lines",
+        "suit_jacket": ["Relaxed shoulders and tapered base", "Low-button blazers", "Narrow lapels for vertical line", "Single-breasted preferred", "Soft shoulders"],
+        "shirts": ["V-neck openings", "Vertical textures", "Slim-fit but not tight", "Subtle patterns"],
+        "shirt_collar": ["Standard point collar", "V-neck under blazers", "Open collar"],
+        "tie_width": "Standard, neat tie 2.5-2.75 inches",
+        "trouser_cut": ["Slim-cut trousers", "Tapered cuts (creates vertical line)", "Vertical pleats", "Pinstripes (subtle)", "Flat-front"],
+        "trouser_color": "Darker tones below; deep jewel tones for richness",
+        "rise": "Mid-rise that doesn't pinch midsection",
+        "belt": "Narrow belts that don't draw attention to midsection; tonal belt to outfit color",
+        "footwear": ["Oxford", "Cap-toe", "Pointed elongating shoes"],
+        "watch_size": "Medium 40mm",
+        "knitwear": ["V-neck sweaters with vertical textures", "Dark knitwear", "Cable knits in vertical pattern"],
+        "patterns_flatter": ["Vertical pleats", "Pinstripes (subtle)", "Vertical lines", "Soft tailoring"],
+        "patterns_avoid": ["Horizontal stripes at midsection", "Large prints across waist"],
+        "color_strategy": "Deep jewel tones and rich fabrics; vertical color flow; darker top to bottom or monochromatic",
+        "fabrics_flatter": ["Soft drape", "Rich fabrics", "Quality wools", "Lightweight cashmere"],
+        "accessories": ["Quality leather briefcases", "Subtle ties", "Long lapel pins (vertical)"],
+        "avoid": ["Horizontal stripes at midsection", "Boxy blazers", "Tight shirts straining at midsection"],
+        "overall_tips": [
+          "Balance the silhouette with vertical lines",
+          "Choose vertical details throughout",
+          "Add definition to the waist subtly (low-button blazer)",
+          "Define the neckline with V-necks and open collars",
+          "Opt for V-necks and dark knitwear",
+          "Introduce rich colors and textures",
+          "Focus on vertical lines and soft tailoring"
+        ]
+      },
+
+      "tubular": {
+        "display_name": "Tubular (Slim / Narrow)",
+        "identification_rule": "Tall and slim with narrow proportions throughout; minimal width variance; lean frame",
+        "goal": "Add visual breadth and presence; avoid drowning in fabric; build out with structure",
+        "suit_jacket": ["Structured shoulders with light padding", "Double-breasted (adds chest volume)", "Peak lapels (visual width)", "Three-piece for layering", "Slim-fit but never tight"],
+        "shirts": ["Horizontal stripes", "Layered fabrics", "Textured fabrics", "Button-downs", "Spread collars (widens visual)", "Pinpoint cotton with weight"],
+        "shirt_collar": ["Spread collar", "Club collar", "Button-down with structure"],
+        "tie_width": "Wider ties (3 inches), bold patterns; visual weight",
+        "trouser_cut": ["Pleated trousers (add hip volume)", "Cuffed bottoms (add visual weight)", "Flat-front slim cuts", "Straight-leg with structure"],
+        "trouser_avoid": ["Super-skinny tapered cuts", "Drop-crotch styles"],
+        "trouser_color": "Layering colors; lighter on bottom can add visual width; mid-tones over dark",
+        "rise": "Mid-rise with proper waistband structure",
+        "belt": "Standard width 1.25-1.5 inches; statement buckle; quality leather",
+        "footwear": ["Brogues", "Wing-tips", "Cap-toe Oxfords", "Visual interest with welt and structure"],
+        "watch_size": "Larger 42-44mm — wrist presence",
+        "knitwear": ["Cable knits", "Chunky textures", "Aran sweaters", "Layered cardigans"],
+        "patterns_flatter": ["Horizontal stripes", "Plaid", "Tweed", "Herringbone", "Windowpane checks", "Bold patterns"],
+        "patterns_avoid": ["Tiny pinstripes (lost on frame)", "Plain solids without texture"],
+        "color_strategy": "Layering with contrasts; lighter colors on bottom OK; horizontal color blocking acceptable",
+        "fabrics_flatter": ["Tweed", "Flannel", "Textured wools", "Layered fabrics", "Heavy cottons", "Cable knits"],
+        "accessories": ["Pocket squares", "Lapel pins", "Scarves (chest volume)", "Cufflinks", "Bold ties"],
+        "avoid": ["Drowning in oversized fits", "Super-skinny tapered cuts", "Plain thin fabrics"],
+        "overall_tips": [
+          "Add visual breadth with structure and texture",
+          "Layer pieces — vests, cardigans, scarves",
+          "Choose textured fabrics over thin smooth ones",
+          "Horizontal stripes work in your favor",
+          "Slim-fit tailored — never tight, never oversized"
+        ]
+      },
+
+      "rounded": {
+        "display_name": "Rounded (Stocky / Plus)",
+        "identification_rule": "Fuller midsection with less defined shoulders; soft overall silhouette; weight throughout torso",
+        "goal": "Create vertical lines, use dark tones, focus on clean drape and tailored fit",
+        "suit_jacket": ["Vertical drapes", "Unbuttoned jackets and straight cuts", "Subtle shoulder padding and wool blends", "Single-breasted with low-button placement", "Three-piece with longer waistcoat"],
+        "shirts": ["Spread collars and wider ties", "V-neck knitwear", "Open collars", "Soft drapey fabrics with structure"],
+        "shirt_collar": ["Spread", "Cutaway", "Open collar (no tie casual)"],
+        "tie_width": "Slightly looser tie knot, comfortable; standard 2.75-3 inches",
+        "trouser_cut": ["Vertical drapes", "Straight cuts with slight taper", "Micro-check tones and pinpoint fabrics", "Flat-front high-rise"],
+        "trouser_color": "Monochromatic schemes and dark suiting; tonal dressing for elongation",
+        "rise": "Mid to high-rise tailored; comfortable waistband",
+        "belt": "Tonal belt for elongation; dark colors; medium-width",
+        "footwear": ["Cap-toe Oxford", "Brown or dark leather", "Quality polished shoes", "Avoid round chunky styles"],
+        "watch_size": "Medium-large 40-44mm proportionate to wrist",
+        "knitwear": ["V-neck knitwear", "Single-breasted choices", "Cardigan layers (open creates vertical line)"],
+        "patterns_flatter": ["Subtle pinpoint", "Micro-check tones", "Vertical pinstripes (subtle)", "Vertical patterns"],
+        "patterns_avoid": ["Bold horizontal patterns", "Overly tight shirts", "Large checks"],
+        "color_strategy": "Dark colors and tonal looks; monochromatic schemes and dark suiting; tonal dressing for elongation; never high-contrast at midsection",
+        "fabrics_flatter": ["Wool blends", "Soft fabrics with structure", "Quality drapery wools", "Crepes"],
+        "accessories": ["Quality leather briefcases", "Patterned socks for micro-detail", "Pocket squares (vertical fold)"],
+        "avoid": ["Tight shirts straining at midsection", "Overly bold patterns", "Cropped jackets", "High-contrast belt against shirt"],
+        "overall_tips": [
+          "Office attire goal: balance comfort and shape for clean professional look",
+          "Create vertical lines throughout the outfit",
+          "Use dark colors and tonal looks",
+          "Opt for structured shoulders and soft fabrics",
+          "Define the neckline subtly for comfort",
+          "Choose single-breasted and V-neck knitwear",
+          "Introduce subtle textures below",
+          "Focus on clean drape and tailored fit"
+        ]
+      }
+    }
+  },
+
+  "face_shapes": {
+    "oval": {
+      "display_name": "Oval",
+      "identification_rule": "Length = 1.5x width; jaw narrower than cheekbones; soft chin; balanced proportions",
+      "characteristics": "The most balanced face shape; nearly all styles work well",
+      "hairstyles_men": ["Side part", "Undercut", "Classic taper", "Slick back", "Textured crop", "Quiff", "Medium-length tousled", "Pompadour"],
+      "hairstyles_women": ["Long layers", "Lobs", "Pixie cuts", "Blunt cuts", "Bobs of any length", "Beach waves", "Sleek straight", "Curly long"],
+      "facial_hair_men": ["All beard styles work", "Stubble", "Full beard", "Goatee", "Van Dyke", "Boxed beard", "Clean shave"],
+      "eyebrow_shape": "Soft arch following natural shape; medium thickness",
+      "eyewear_frames": ["Most frames work", "Wayfarer", "Aviator", "Square", "Round (avoid oversized that disrupts balance)"],
+      "earrings_women": ["Any shape — studs, hoops, drops, chandeliers all work"],
+      "necklines_flatter": ["V-neck", "Scoop", "Boat", "Sweetheart", "Crew", "Mock"],
+      "headshot_pose_tip": "Slight chin tilt down; natural three-quarter angle works"
+    },
+
+    "round": {
+      "display_name": "Round",
+      "identification_rule": "Length ≈ width; soft jawline; full cheeks; rounded chin; widest at cheeks",
+      "hairstyles_men": ["Height on top", "Short sides", "Undercut", "Pompadour", "Taper fade", "Side part with volume", "Quiff"],
+      "hairstyles_men_avoid": ["Center parts", "Fringes", "Full bowl cuts", "Short rounded styles"],
+      "hairstyles_women": ["Long layers", "Side-swept bangs", "Asymmetrical cuts", "Lobs (long bobs)", "Long straight with center part", "Volume at crown"],
+      "hairstyles_women_avoid": ["Blunt chin-length cuts", "Full round bobs", "Very short curly", "Curtain bangs at chin"],
+      "facial_hair_men": ["Pointed/goatee styles to elongate", "Van Dyke beard", "Anchor beard", "Extended goatee"],
+      "facial_hair_men_avoid": ["Full round beards", "Mutton chops", "Chin curtain"],
+      "eyebrow_shape": "High arch to add length; angular brow",
+      "eyewear_frames": ["Rectangular", "Square", "Geometric", "Cat-eye (women)"],
+      "eyewear_avoid": ["Round frames", "Circular oversized"],
+      "earrings_women": ["Long drops", "Linear/teardrop", "Angular shapes", "Vertical earrings"],
+      "earrings_avoid": ["Round hoops at jaw", "Circle studs"],
+      "necklines_flatter": ["V-necks (deep)", "Deep scoops", "Sweetheart", "Surplice"],
+      "necklines_avoid": ["Crew necks", "Round necklines", "Boat necks"],
+      "headshot_pose_tip": "Three-quarter angle preferred; chin slightly forward and down to elongate"
+    },
+
+    "square": {
+      "display_name": "Square",
+      "identification_rule": "Length ≈ width; strong angular jawline; equal forehead and jaw width; sharp angles",
+      "hairstyles_men": ["Soft layers on top", "Side-swept fringe", "Longer styles", "Textured crop with movement", "Tapered fade with volume on top"],
+      "hairstyles_men_avoid": ["Brush cuts", "Flat tops", "Buzz cuts", "Sharp geometric styles"],
+      "hairstyles_women": ["Soft layers", "Side-swept fringe", "Curls and waves", "Lob with movement", "Asymmetrical cuts"],
+      "hairstyles_women_avoid": ["Blunt cuts at jaw", "Sharp geometric bobs", "Center-part straight"],
+      "facial_hair_men": ["Trimmed beard with rounded edges", "Soft stubble", "Goatee that softens jaw"],
+      "facial_hair_men_avoid": ["Square-cut beards", "Sharp boxed beards", "Mutton chops"],
+      "eyebrow_shape": "Soft arch to soften jawline; rounded shape; never angular",
+      "eyewear_frames": ["Round", "Oval", "Curved frames", "Aviator with curve"],
+      "eyewear_avoid": ["Square frames", "Geometric angular"],
+      "earrings_women": ["Round/circular", "Hoops", "Curved drops", "Pearl studs"],
+      "earrings_avoid": ["Sharp angular shapes", "Geometric squares"],
+      "necklines_flatter": ["Scoop", "Round", "Sweetheart", "Cowl"],
+      "necklines_avoid": ["Square necks", "Sharp V-necks"],
+      "headshot_pose_tip": "Slight angle softens jaw; avoid straight-on shots"
+    },
+
+    "heart": {
+      "display_name": "Heart (Inverted Triangle)",
+      "identification_rule": "Wide forehead; narrow chin; defined cheekbones; tapered to point at chin",
+      "hairstyles_men": ["Medium-length with weight at jaw", "Side parts", "Textured medium length", "Brushed-back styles with chin volume"],
+      "hairstyles_men_avoid": ["Short on top with width", "Quiffs that emphasize forehead", "Slick-back exposing forehead"],
+      "hairstyles_women": ["Side parting", "Chin-length bobs adding weight to chin", "Long layers ending at jaw", "Beach waves with chin volume"],
+      "hairstyles_women_avoid": ["Pixie cuts (emphasize forehead)", "Slicked-back updos", "Center parts that elongate forehead"],
+      "facial_hair_men": ["Full beard balancing jaw", "Boxed beard", "Goatee adding chin definition", "Chin strap"],
+      "facial_hair_men_avoid": ["Clean shave (loses jaw balance)", "Mustache only"],
+      "eyebrow_shape": "Soft arch; not too thin; rounded brow",
+      "eyewear_frames": ["Bottom-heavy frames", "Round", "Oval", "Aviator (balances)"],
+      "eyewear_avoid": ["Top-heavy frames", "Wide rectangular", "Cat-eye"],
+      "earrings_women": ["Wide at bottom (chandelier)", "Triangle drops (point up)", "Teardrop bottom-heavy"],
+      "necklines_flatter": ["Boat necks", "Crew", "V-neck", "Sweetheart"],
+      "necklines_avoid": ["Halter (emphasizes wide forehead)", "Strapless"],
+      "headshot_pose_tip": "Forehead slightly tilted down; bring chin forward to add definition"
+    },
+
+    "oblong": {
+      "display_name": "Oblong (Rectangle)",
+      "identification_rule": "Length > 1.6x width; straight parallel sides; long forehead and chin",
+      "hairstyles_men": ["Sides with volume", "Medium length with width at sides", "Textured crops", "Side-swept fringe"],
+      "hairstyles_men_avoid": ["Long top-heavy", "Pompadours that add height", "Slick-back high"],
+      "hairstyles_women": ["Layered cuts adding width", "Soft waves", "Curls", "Lobs with curtain bangs", "Side-swept bangs"],
+      "hairstyles_women_avoid": ["Long straight middle-part", "High ponytails", "Sleek slick-back updos"],
+      "facial_hair_men": ["Beard with width on cheeks (mutton chops, full beard)", "Wide boxed beard", "Cheek-emphasizing styles"],
+      "facial_hair_men_avoid": ["Long pointed goatee", "Soul patch alone", "Chin strap"],
+      "eyebrow_shape": "Straighter brow to widen face; horizontal line",
+      "eyewear_frames": ["Wide square or rectangular", "Round oversized", "Wayfarer", "Decorative temples (add width)"],
+      "eyewear_avoid": ["Narrow frames", "Tall frames"],
+      "earrings_women": ["Wide horizontal styles", "Studs", "Hoops", "Round shapes"],
+      "earrings_avoid": ["Long vertical drops"],
+      "necklines_flatter": ["Boat neck", "Sweetheart", "Cowl", "Off-shoulder"],
+      "necklines_avoid": ["Deep V-neck", "Narrow plunging"],
+      "headshot_pose_tip": "Straight-on or slight angle; avoid chin-down which elongates"
+    },
+
+    "diamond": {
+      "display_name": "Diamond",
+      "identification_rule": "Narrow forehead; wide cheekbones; narrow chin; angular face",
+      "hairstyles_men": ["Volume at temples and forehead", "Side-swept fringe", "Textured tops", "Medium length to soften cheekbones"],
+      "hairstyles_men_avoid": ["Short tight cuts (emphasize cheekbones)", "Slicked-back exposing forehead width contrast"],
+      "hairstyles_women": ["Side-swept fringe (balances forehead)", "Chin-length cuts", "Bobs ending at jaw", "Long layers with chin volume"],
+      "hairstyles_women_avoid": ["Slicked back updos", "Pixie cuts emphasizing cheekbones"],
+      "facial_hair_men": ["Beards filling jaw line", "Full beard", "Goatee with chin width"],
+      "facial_hair_men_avoid": ["Pointed goatee narrowing chin further"],
+      "eyebrow_shape": "Slightly fuller brow; soft curve; not too arched",
+      "eyewear_frames": ["Cat-eye", "Top-heavy", "Oval", "Rimless that don't compete with cheekbones"],
+      "eyewear_avoid": ["Narrow frames at temple", "Geometric sharp angles"],
+      "earrings_women": ["Wide drops", "Triangle inverted", "Bottom-heavy", "Statement studs"],
+      "necklines_flatter": ["V-neck", "Scoop", "Sweetheart"],
+      "necklines_avoid": ["Halter pulling at narrow forehead"],
+      "headshot_pose_tip": "Three-quarter angle softens cheekbone width; slight chin tilt"
+    },
+
+    "triangle": {
+      "display_name": "Triangle (Pear / Trapezoid)",
+      "identification_rule": "Narrow forehead; wide jawline; widest at jaw",
+      "hairstyles_men": ["Volume on top", "Faded sides", "Pompadour", "Quiff", "Mohawk-inspired modern cuts", "Side-swept with volume"],
+      "hairstyles_men_avoid": ["Bowl cuts", "Long sides covering ears", "Heavy beards adding jaw weight"],
+      "hairstyles_women": ["Volume at crown", "Side-swept bangs", "Asymmetrical cuts longer at top", "Layered shorter at top, longer at chin"],
+      "hairstyles_women_avoid": ["Center parts with no volume", "Heavy chin-length cuts adding jaw weight"],
+      "facial_hair_men": ["Trimmed close beards", "Stubble", "Goatee centered (narrows jaw visually)"],
+      "facial_hair_men_avoid": ["Full beards adding jaw weight", "Mutton chops", "Chin curtains"],
+      "eyebrow_shape": "Bold high arches to widen forehead; statement brows",
+      "eyewear_frames": ["Top-heavy", "Aviator", "Cat-eye", "Browline frames"],
+      "eyewear_avoid": ["Bottom-heavy frames", "Round small at jawline"],
+      "earrings_women": ["Wide at top, narrow drops", "Triangle pointing down", "Statement studs"],
+      "necklines_flatter": ["V-neck", "Plunging neckline", "Halter (widens shoulders)", "Off-shoulder"],
+      "necklines_avoid": ["Crew", "Round close to jawline"],
+      "headshot_pose_tip": "Slight angle; emphasize forehead/eyes upper half of frame"
+    }
+  },
+
+  "vertical_proportions": {
+    "_instructions": "Length of torso vs legs affects styling rules. Identified by: while seated, where waistline sits relative to total body length",
+    "balanced": {
+      "characteristics": "Torso length ≈ leg length",
+      "rules": "Standard styling applies; can wear most rises and lengths"
+    },
+    "short_waisted_long_legs": {
+      "characteristics": "Short distance from underarm to natural waist; long legs from waist down",
+      "rules": [
+        "Avoid high-waisted styles (shorten torso further)",
+        "Mid-rise or low-rise preferred",
+        "Avoid dropping waistlines below natural waist",
+        "Tucked-in tops with belt slightly below natural waist",
+        "Empire-waist creates further imbalance"
+      ]
+    },
+    "long_waisted_short_legs": {
+      "characteristics": "Long torso; shorter legs proportionally",
+      "rules": [
+        "High-waisted styles ALWAYS preferred",
+        "Empire waist adds leg length visually",
+        "Avoid hip-slung trousers",
+        "Tuck in to elongate legs",
+        "Same-color shoe and trouser create unbroken leg line",
+        "Avoid wide horizontal belts at natural waist (cuts further)",
+        "Crop tops only if pairing with high-rise"
+      ]
+    }
+  },
+
+  "horizontal_proportions": {
+    "_instructions": "Pattern and accessory scale should match body scale",
+    "petite_under_5_3": {
+      "pattern_scale": "Small to medium prints only; large prints overwhelm",
+      "accessory_scale": "Small to medium accessories",
+      "bag_size": "Small to medium",
+      "watch_size_men": "38-40mm",
+      "heel_height_advice": "2.5-4 inches adds proportion without being overwhelming",
+      "monochromatic_advice": "Strongly recommended — elongates"
+    },
+    "average_5_3_to_5_8": {
+      "pattern_scale": "Medium prints work best; can wear small or large with care",
+      "accessory_scale": "Medium",
+      "bag_size": "Medium",
+      "watch_size_men": "40-42mm"
+    },
+    "tall_above_5_8": {
+      "pattern_scale": "Medium to large prints; small prints disappear",
+      "accessory_scale": "Medium to large; small accessories look proportionally tiny",
+      "bag_size": "Medium to large",
+      "watch_size_men": "42-46mm",
+      "heel_height_advice": "Optional; flats and low heels work beautifully"
+    }
+  },
+
+  "skin_tone_palette_matrix": {
+    "_instructions": "Each cell maps (skin_depth × undertone) to a personalized 18-color palette. Based on Color Me Beautiful 12-season system adapted for South Asian skin tones.",
+
+    "warm": {
+      "1_3_fair": {
+        "best_neutrals": ["Ivory", "Champagne", "Camel", "Warm gray", "Soft brown", "Olive"],
+        "best_statements": ["Coral", "Peach", "Mustard yellow", "Rust", "Warm pink", "Teal"],
+        "avoid": ["Stark black", "Pure white", "Icy blue", "Magenta", "Cool pinks"],
+        "best_white": "Ivory or off-white",
+        "black_alternative": "Chocolate brown or dark olive",
+        "metals": ["Gold (primary)", "Rose gold", "Bronze"],
+        "season_label": "Warm Spring (Light)"
+      },
+      "4_6_wheatish_medium": {
+        "best_neutrals": ["Camel", "Warm beige", "Tan", "Olive", "Chocolate", "Burnt sienna"],
+        "best_statements": ["Coral", "Burnt orange", "Mustard", "Burgundy", "Emerald green", "Marigold"],
+        "avoid": ["Pastels that wash out", "Icy tones", "Cool magentas"],
+        "best_white": "Cream or warm off-white",
+        "black_alternative": "Deep brown or warm charcoal",
+        "metals": ["Gold (primary)", "Rose gold", "Bronze"],
+        "season_label": "Warm Autumn"
+      },
+      "7_8_dusky_deep": {
+        "best_neutrals": ["Camel", "Caramel", "Deep brown", "Olive", "Forest green", "Deep gold"],
+        "best_statements": ["Bright coral", "Marigold", "Mustard", "Burgundy", "Emerald", "Royal blue", "Fuchsia"],
+        "avoid": ["Pastels", "Muddy browns close to skin tone", "Beige very close to skin"],
+        "best_white": "Pure white works beautifully; ivory also flattering",
+        "black_alternative": "Black works well",
+        "metals": ["Gold (excellent)", "Bronze", "Copper"],
+        "season_label": "Deep Autumn"
+      },
+      "9_10_rich_deep": {
+        "best_neutrals": ["Espresso", "Deep camel", "Gold-tinted browns", "Warm black", "Deep olive"],
+        "best_statements": ["Saffron", "Marigold", "Coral", "Turmeric", "Deep emerald", "Brick red", "Magenta", "Royal purple"],
+        "avoid": ["Pastel pinks", "Mint", "Dusty mauve", "Washed-out neutrals"],
+        "best_white": "Pure white (high contrast); cream",
+        "black_alternative": "Black works perfectly",
+        "metals": ["Gold (excellent)", "Copper", "Bronze"],
+        "season_label": "Deep Warm"
+      }
+    },
+
+    "cool": {
+      "1_3_fair": {
+        "best_neutrals": ["Pure white", "Cool gray", "Navy", "Charcoal", "Soft pink"],
+        "best_statements": ["Cobalt blue", "Magenta", "Cool pink", "Lavender", "Emerald", "Cherry red"],
+        "avoid": ["Orange", "Yellow-greens", "Camel", "Rust", "Mustard"],
+        "best_white": "Pure white",
+        "black_alternative": "Black works perfectly",
+        "metals": ["Silver (primary)", "Platinum", "White gold"],
+        "season_label": "Cool Summer"
+      },
+      "4_6_wheatish_medium": {
+        "best_neutrals": ["Pure white", "Cool gray", "Navy", "Burgundy", "Plum"],
+        "best_statements": ["Royal blue", "Magenta", "Berry", "Plum", "Emerald", "Cherry red"],
+        "avoid": ["Orange", "Mustard", "Camel", "Beige", "Warm yellows"],
+        "best_white": "Pure white",
+        "black_alternative": "Black or charcoal",
+        "metals": ["Silver", "White gold", "Platinum"],
+        "season_label": "Cool Winter"
+      },
+      "7_8_dusky_deep": {
+        "best_neutrals": ["Pure white", "Cool gray", "Charcoal", "Navy", "Plum", "Deep wine"],
+        "best_statements": ["Royal blue", "Fuchsia", "Magenta", "Emerald", "Sapphire", "Ruby red", "Cool berry"],
+        "avoid": ["Orange", "Mustard", "Rust", "Beige", "Warm browns"],
+        "best_white": "Pure white",
+        "black_alternative": "Black ideal",
+        "metals": ["Silver", "Platinum", "White gold", "Gunmetal"],
+        "season_label": "Deep Winter"
+      },
+      "9_10_rich_deep": {
+        "best_neutrals": ["Pure white", "Ice gray", "Charcoal", "Midnight blue", "Deep plum"],
+        "best_statements": ["Cobalt", "Royal blue", "Fuchsia", "Hot pink", "Emerald", "Ruby", "Sapphire", "Jewel tones"],
+        "avoid": ["Earth tones", "Beige", "Peach", "Muted colors"],
+        "best_white": "Pure brilliant white",
+        "black_alternative": "Black perfect",
+        "metals": ["Silver", "Platinum", "White gold"],
+        "season_label": "Cool Deep"
+      }
+    },
+
+    "neutral": {
+      "1_3_fair": {
+        "best_neutrals": ["Soft white", "Taupe", "Gray", "Navy", "Dove gray", "Mushroom"],
+        "best_statements": ["Rose pink", "Teal", "Periwinkle", "Soft coral", "Dusty blue", "Mauve"],
+        "avoid": ["Very intense neon colors", "Stark contrasts"],
+        "best_white": "Soft white or cream",
+        "black_alternative": "Charcoal, navy",
+        "metals": ["Both gold and silver work", "Rose gold preferred"],
+        "season_label": "Neutral Light"
+      },
+      "4_6_wheatish_medium": {
+        "best_neutrals": ["Warm taupe", "Mushroom", "Navy", "Gray", "Dusty rose", "Soft brown"],
+        "best_statements": ["Teal", "Jade green", "Coral", "Rose pink", "Deep purple", "Soft red"],
+        "avoid": ["Very harsh contrasts", "Pure neon colors"],
+        "best_white": "Soft white or ivory",
+        "black_alternative": "Charcoal, navy",
+        "metals": ["Rose gold (excellent)", "Mixed metals work"],
+        "season_label": "Neutral Soft"
+      },
+      "7_8_dusky_deep": {
+        "best_neutrals": ["Warm gray", "Navy", "Deep taupe", "Chocolate", "Espresso"],
+        "best_statements": ["Teal", "Jade", "Coral", "Deep pink", "Plum", "Deep red", "Cobalt"],
+        "avoid": ["Pastels that wash out", "Very pale neutrals"],
+        "best_white": "Soft white or warm white",
+        "black_alternative": "Black works well, espresso also",
+        "metals": ["Both gold and silver", "Rose gold preferred"],
+        "season_label": "Neutral Deep"
+      },
+      "9_10_rich_deep": {
+        "best_neutrals": ["Pure white", "Charcoal", "Navy", "Espresso", "Jet black"],
+        "best_statements": ["Jewel tones", "Fuchsia", "Emerald", "Ruby", "Royal blue", "Marigold"],
+        "avoid": ["Pale pastels", "Washed-out tones"],
+        "best_white": "Pure white",
+        "black_alternative": "Black ideal",
+        "metals": ["All metals work", "Gold and silver equally striking"],
+        "season_label": "Neutral Rich"
+      }
+    },
+
+    "olive": {
+      "1_3_fair": {
+        "best_neutrals": ["Olive", "Khaki", "Warm beige", "Soft black", "Navy"],
+        "best_statements": ["Burnt orange", "Mustard", "Sage", "Terracotta", "Deep teal"],
+        "avoid": ["Pure pink", "Lavender", "Baby blue", "Pastels"],
+        "best_white": "Cream, ivory",
+        "black_alternative": "Olive, dark navy",
+        "metals": ["Gold", "Bronze"],
+        "season_label": "Olive Light"
+      },
+      "4_6_wheatish_medium": {
+        "best_neutrals": ["Olive", "Khaki", "Camel", "Warm beige", "Soft brown"],
+        "best_statements": ["Mustard", "Burnt orange", "Sage", "Terracotta", "Deep teal", "Coral"],
+        "avoid": ["Cool pinks", "Icy blues", "Pure pastels", "Fuchsia"],
+        "best_white": "Cream, ivory, warm white",
+        "black_alternative": "Dark olive, espresso, charcoal",
+        "metals": ["Gold (excellent)", "Bronze", "Rose gold"],
+        "season_label": "Olive Warm"
+      },
+      "7_8_dusky_deep": {
+        "best_neutrals": ["Deep olive", "Espresso", "Warm gray", "Dark navy", "Forest green"],
+        "best_statements": ["Mustard", "Marigold", "Deep teal", "Emerald", "Burnt orange", "Terracotta", "Coral"],
+        "avoid": ["Cool pastels", "Icy tones", "Pure cool pinks"],
+        "best_white": "Cream, ivory",
+        "black_alternative": "Black works well; espresso for warmth",
+        "metals": ["Gold", "Copper", "Bronze"],
+        "season_label": "Olive Deep"
+      },
+      "9_10_rich_deep": {
+        "best_neutrals": ["Espresso", "Dark olive", "Charcoal", "Warm black"],
+        "best_statements": ["Deep marigold", "Emerald", "Sapphire", "Ruby", "Mustard", "Saffron"],
+        "avoid": ["Pastels", "Icy tones"],
+        "best_white": "Cream",
+        "black_alternative": "Black perfect",
+        "metals": ["Gold", "Bronze", "Copper"],
+        "season_label": "Olive Rich"
+      }
+    }
+  },
+
+  "style_personalities": {
+    "_instructions": "Based on ICBI public framework. Each person has a primary and secondary style personality. Use to layer over body shape recommendations.",
+    "classic": {
+      "characteristics": "Refined, traditional, polished, timeless",
+      "preferred_pieces": ["Tailored blazers", "Pencil skirts", "Pearl jewelry", "Closed-toe pumps", "Trench coats", "Crisp button-downs"],
+      "patterns": ["Pinstripes", "Solids", "Subtle checks"],
+      "colors": ["Navy", "Camel", "Cream", "Black", "White"],
+      "celebrity_examples": ["Aishwarya Rai (formal looks)", "Kareena Kapoor (corporate)", "Ratan Tata"],
+      "best_for": "Corporate executives, senior leaders, judiciary, banking"
+    },
+    "romantic": {
+      "characteristics": "Soft, feminine, flowing, gentle, ornate",
+      "preferred_pieces": ["Wrap dresses", "Lace details", "Floral prints", "Pearl earrings", "Silk scarves", "Soft blouses"],
+      "patterns": ["Florals", "Soft prints", "Lace"],
+      "colors": ["Soft pinks", "Pastels", "Dusty rose", "Cream"],
+      "celebrity_examples": ["Vidya Balan", "Madhuri Dixit"],
+      "best_for": "Customer-facing roles, hospitality, education with younger students"
+    },
+    "dramatic": {
+      "characteristics": "Bold, striking, sleek, powerful, statement-making",
+      "preferred_pieces": ["Sharp blazers", "Asymmetric cuts", "Statement jewelry", "Bold heels", "Sleek silhouettes"],
+      "patterns": ["Bold geometrics", "Color blocks", "High contrast"],
+      "colors": ["Black", "White", "Cobalt", "Red", "Bold jewel tones"],
+      "celebrity_examples": ["Sonam Kapoor", "Deepika Padukone (red carpet)", "Ranveer Singh"],
+      "best_for": "Senior leadership, public-facing roles, performing arts, leadership"
+    },
+    "natural_sporty": {
+      "characteristics": "Casual, comfortable, easy, unfussy, approachable",
+      "preferred_pieces": ["Linen trousers", "Cotton kurtas", "Chinos", "Loafers", "Watches over jewelry", "Tote bags"],
+      "patterns": ["Solids", "Stripes", "Checks", "Earthy textures"],
+      "colors": ["Earth tones", "Olive", "Camel", "Denim blue", "Cream"],
+      "celebrity_examples": ["Anushka Sharma (off-duty)", "Farhan Akhtar"],
+      "best_for": "Tech roles, creative roles, day-to-day teaching, field work"
+    },
+    "creative": {
+      "characteristics": "Eclectic, artistic, unique combinations, personality-driven",
+      "preferred_pieces": ["Statement pieces", "Layered jewelry", "Mixed prints", "Unique silhouettes", "Vintage elements"],
+      "patterns": ["Mixed patterns", "Ethnic prints", "Bold florals", "Unexpected combinations"],
+      "colors": ["Jewel tones", "Unexpected combinations", "Bold pairings"],
+      "celebrity_examples": ["Sonam Kapoor", "Vidyut Jamwal (off-duty)"],
+      "best_for": "Design roles, creative leads, founders, public personalities"
+    },
+    "_for_instructors_default": "natural_sporty (everyday teaching) + classic (formal events) — most versatile combination for NxtWave classroom"
+  },
+
+  "kurta_silhouette_matrix": {
+    "_instructions": "Body shape × kurta silhouette compatibility. Values: 'recommended' | 'acceptable' | 'avoid'",
+    "anarkali": {
+      "triangular": "recommended", "inverted_triangular": "recommended", "rectangular": "recommended",
+      "hourglass": "acceptable", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "a_line": {
+      "triangular": "recommended", "inverted_triangular": "recommended", "rectangular": "recommended",
+      "hourglass": "recommended", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "empire_waist": {
+      "triangular": "recommended", "inverted_triangular": "recommended", "rectangular": "recommended",
+      "hourglass": "acceptable", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "straight": {
+      "triangular": "acceptable", "inverted_triangular": "acceptable", "rectangular": "avoid",
+      "hourglass": "recommended", "diamond": "avoid", "tubular": "avoid", "rounded": "avoid"
+    },
+    "panelled": {
+      "triangular": "recommended", "inverted_triangular": "recommended", "rectangular": "recommended",
+      "hourglass": "recommended", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "flared": {
+      "triangular": "recommended", "inverted_triangular": "acceptable", "rectangular": "recommended",
+      "hourglass": "recommended", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "wrap_overlap": {
+      "triangular": "recommended", "inverted_triangular": "acceptable", "rectangular": "recommended",
+      "hourglass": "recommended", "diamond": "recommended", "tubular": "recommended", "rounded": "recommended"
+    },
+    "peplum": {
+      "triangular": "recommended", "inverted_triangular": "recommended", "rectangular": "recommended",
+      "hourglass": "recommended", "diamond": "acceptable (peplum from below bust only)", "tubular": "recommended", "rounded": "recommended (from below bust)"
+    }
+  },
+
+  "saree_drape_styles_detailed": {
+    "nivi": {
+      "origin": "Andhra Pradesh / Telangana / standard modern drape",
+      "characteristics": "Pleated front, pallu over left shoulder, single side drape",
+      "best_for_body_shapes": ["all"],
+      "occasion": "Daily wear, office, all-purpose",
+      "skill_level": "Beginner"
+    },
+    "bengali": {
+      "origin": "West Bengal",
+      "characteristics": "Box-pleat-less drape, pallu over both shoulders, longer front pleats",
+      "best_for_body_shapes": ["triangular", "rectangular", "tubular"],
+      "occasion": "Festive, cultural events",
+      "skill_level": "Intermediate"
+    },
+    "gujarati_seedha_pallu": {
+      "origin": "Gujarat",
+      "characteristics": "Pallu in front (right shoulder to left side), shows blouse design",
+      "best_for_body_shapes": ["inverted_triangular", "rectangular"],
+      "occasion": "Religious, traditional, weddings",
+      "skill_level": "Intermediate"
+    },
+    "maharashtrian_nauvari": {
+      "origin": "Maharashtra",
+      "characteristics": "9-yard drape, dhoti-style, no petticoat",
+      "best_for_body_shapes": ["all"],
+      "occasion": "Cultural events, traditional Maharashtrian",
+      "skill_level": "Advanced"
+    },
+    "lehenga_style": {
+      "characteristics": "Pleats spread out at bottom like a lehenga; wider at hem",
+      "best_for_body_shapes": ["inverted_triangular", "rectangular", "tubular"],
+      "occasion": "Weddings, receptions, festive",
+      "skill_level": "Advanced"
+    },
+    "belted_modern": {
+      "characteristics": "Standard nivi drape with statement belt at waist",
+      "best_for_body_shapes": ["rectangular", "tubular", "rounded", "diamond"],
+      "occasion": "Modern office, semi-formal events",
+      "skill_level": "Beginner-Intermediate"
+    },
+    "mermaid_fishtail": {
+      "characteristics": "Fitted at hips, flared at knee level",
+      "best_for_body_shapes": ["hourglass", "tubular"],
+      "occasion": "Receptions, parties, formal events",
+      "skill_level": "Advanced"
+    }
+  },
+
+  "fit_checkpoints": {
+    "men_shirt": {
+      "shoulder_seam": { "rule": "Seam ends at shoulder bone end", "too_tight": "Pull at shoulder; visible strain", "too_loose": "Seam falls below shoulder bone" },
+      "chest_pinch_test": { "rule": "Maximum 1 inch fabric pinch at chest", "too_tight": "No pinch possible; fabric strains", "too_loose": "More than 2 inches pinch" },
+      "waist": { "rule": "No pulling at buttons", "too_tight": "Button strain (X-shape between buttons)", "too_loose": "Excessive billowing" },
+      "sleeve_length": { "rule": "Cuff at wrist bone (or 1cm past)", "too_tight": "Cuff pulls up arm", "too_loose": "Cuff covers hand" },
+      "shirt_length": { "rule": "Covers waistband by 2 inches when untucked", "too_tight": "Pulls up", "too_loose": "Falls past hip" },
+      "collar_neck": { "rule": "Two-finger gap between collar and neck", "too_tight": "No gap; neck pinched", "too_loose": "Collar gaps from neck" }
+    },
+    "men_trouser": {
+      "waist": { "rule": "No belt-cinch puckering", "too_tight": "Visible muffin top", "too_loose": "Belt cinches creating gathers" },
+      "seat": { "rule": "Smooth, no pull lines", "too_tight": "X-shape pulls under buttocks", "too_loose": "Sagging at seat" },
+      "thigh": { "rule": "Maximum 1.5 inch ease", "too_tight": "Fabric stretches at quad", "too_loose": "Visible billowing" },
+      "break": { "rule": "Full break (touches shoe with slight fold) or half break (light fold) — half-break is modern standard", "too_tight": "Above ankle (high-water)", "too_loose": "Excessive bunching at shoe" },
+      "length": { "rule": "Covers shoe vamp", "too_tight": "Above ankle", "too_loose": "Bunches up over shoe" }
+    },
+    "men_jacket": {
+      "shoulder": { "rule": "Seam at shoulder bone end; no overhang", "too_tight": "Strain across upper back", "too_loose": "Drop-shoulder effect" },
+      "chest": { "rule": "Buttoned with fist between chest and lapel", "too_tight": "Lapel strains; X-pull at button", "too_loose": "Excess fabric at chest" },
+      "sleeve_length": { "rule": "Quarter to half inch of shirt cuff visible", "too_tight": "No cuff visible", "too_loose": "Sleeve covers hand" },
+      "jacket_length": { "rule": "Covers seat fully; ends at thumb-knuckle when arms relaxed", "too_tight": "Above seat", "too_loose": "Below thumb-knuckle" },
+      "back_collar": { "rule": "Collar lies flat against shirt, no gap", "too_tight": "Collar pulls up", "too_loose": "Visible gap between jacket and shirt collar" }
+    },
+    "women_kurti": {
+      "shoulder_seam": { "rule": "Seam at shoulder bone end (unless intentional drop-shoulder)", "too_tight": "Strain visible", "too_loose": "Seam falls past shoulder" },
+      "bust_dart_placement": { "rule": "Dart points to bust apex", "too_tight": "Pulling across bust; no dart definition", "too_loose": "Dart placement off-target" },
+      "waist_nip": { "rule": "Defined at natural waist (for A-line/Anarkali)", "too_tight": "Strain at waist", "too_loose": "No definition; shapeless" },
+      "length": { "rule": "Knee/mid-calf/ankle by occasion and body shape" }
+    },
+    "women_blouse_saree": {
+      "bust_fit": { "rule": "No gaping; smooth across bust", "too_tight": "Gaping between buttons; strain", "too_loose": "Excess fabric at sides" },
+      "sleeve_length": { "rule": "As designed (cap, half, 3/4)", "too_tight": "Pulls at upper arm", "too_loose": "Sleeve hangs" },
+      "back_depth": { "rule": "Modest plus comfortable; based on personal preference and occasion", "too_loose": "Excessive depth feels uncomfortable" },
+      "princess_seams": { "rule": "Aligned with bust apex", "too_tight": "Pulls off-line", "too_loose": "Shifts laterally" }
+    },
+    "women_trousers": {
+      "waist": { "rule": "Sits at intended height (high/mid/low) with no muffin top", "too_tight": "Visible strain", "too_loose": "Belt-cinch gathers" },
+      "seat": { "rule": "Smooth across hips and seat", "too_tight": "Pull lines", "too_loose": "Sagging" },
+      "length": { "rule": "Per intended length (ankle/full/cropped)" }
+    }
+  },
+
+  "occasion_formality_levels": {
+    "regular_class": "L2",
+    "industry_visit": "L3",
+    "convocation": "L3-L4",
+    "convocation_chief_guest": "L4",
+    "parent_meeting": "L2-L3",
+    "online_class": "L2 (top half)",
+    "wedding_attend": "Cultural-formal",
+    "faculty_meeting": "L2",
+    "diwali_celebration": "Cultural",
+    "eid_celebration": "Cultural",
+    "industry_day": "L3",
+    "headshot_day": "L2-L3",
+    "interview_panel_member": "L3",
+    "campus_event_emcee": "L3",
+    "first_day_at_campus": "L3 (memorable first impression)",
+    "regular_office_day": "L2",
+    "online_panel_discussion": "L3 (top half)",
+    "client_external_meeting": "L3",
+    "pongal_makar_sankranti": "Cultural-traditional",
+    "ugadi": "Cultural-traditional",
+    "bonalu_bathukamma": "Telangana-traditional",
+    "christmas_office_party": "L2 with festive accent"
+  },
+
+  "formality_definitions": {
+    "men": {
+      "L1_smart_casual": {
+        "core": "Chinos + button-down (no tie); leather sneakers acceptable; layered with cardigan or unstructured blazer",
+        "examples": "Beige chinos + light blue oxford shirt + brown loafers + tan belt",
+        "avoid": "T-shirts, jeans (unless dark), athletic wear"
+      },
+      "L2_business_casual": {
+        "core": "Trousers + shirt + blazer (optional tie); oxford/derby/loafer",
+        "examples": "Charcoal trousers + white shirt + navy blazer + brown derby; or chinos + button-down + sport coat",
+        "avoid": "Sneakers, jeans, polo shirts in formal classroom"
+      },
+      "L3_business_formal": {
+        "core": "Suit + tie + oxford shoes; leather belt matching shoes",
+        "examples": "Navy suit + light blue shirt + burgundy tie + brown oxfords",
+        "avoid": "Loud patterns, casual shoes, no tie"
+      },
+      "L4_boardroom": {
+        "core": "Dark suit + white shirt + conservative tie + black oxford; pocket square optional",
+        "examples": "Charcoal suit + white shirt + navy tie + black oxford + silver cufflinks",
+        "avoid": "Brown shoes (controversial in conservative L4), bold patterns"
+      }
+    },
+    "women": {
+      "L1_smart_casual": {
+        "core": "Kurti + palazzo or smart Western dress; minimal jewelry",
+        "examples": "Beige kurti + white palazzo + dupatta + nude flats; or printed shirt-dress + flats",
+        "avoid": "Casual T-shirts, jeans, sneakers"
+      },
+      "L2_business_casual": {
+        "core": "Saree (work-appropriate) or formal kurta set or blazer + trousers",
+        "examples": "Cotton saree + tailored blouse + minimal jewelry; or trousers + shirt + blazer",
+        "avoid": "Heavy embellishment, party fabrics"
+      },
+      "L3_business_formal": {
+        "core": "Power saree or structured suit or formal dress",
+        "examples": "Tussar silk saree + tailored blouse; or pantsuit; or formal sheath dress",
+        "avoid": "Casual fabrics, sneakers"
+      },
+      "L4_boardroom": {
+        "core": "Formal saree or conservative suit; minimal but quality jewelry",
+        "examples": "Silk saree in solid color + tailored blouse + pearls; or charcoal pantsuit + closed-toe heels",
+        "avoid": "Bright statement colors, casual fabrics"
+      }
+    },
+    "nxtwave_default": "L2 — Business casual is the everyday classroom standard",
+    "nxtwave_special_events": "L3 — Industry visits, convocation, parent meetings, formal panels"
+  },
+
+  "color_combination_rules": {
+    "the_60_30_10_rule": {
+      "description": "60% dominant color (typically neutral) + 30% secondary color + 10% accent color",
+      "example_outfit": "60% navy trousers/blazer + 30% white shirt + 10% red tie/pocket square"
+    },
+    "monochromatic": {
+      "description": "Single color in different shades — most slimming and elongating",
+      "best_for_body_shapes": ["rounded", "diamond", "tubular"],
+      "example": "Charcoal trousers + light gray shirt + dark gray blazer"
+    },
+    "complementary": {
+      "description": "Opposite colors on color wheel for high contrast",
+      "examples": ["Navy + camel/orange", "Burgundy + deep green", "Purple + yellow"],
+      "use_case": "Statement looks, confidence-building"
+    },
+    "analogous": {
+      "description": "Colors next to each other on wheel for harmonious looks",
+      "examples": ["Blue + teal + green", "Red + orange + yellow"],
+      "use_case": "Subtle sophisticated outfits"
+    },
+    "neutral_plus_pop": {
+      "description": "All neutrals + one statement color accent",
+      "example": "Beige kurta + white palazzo + cobalt blue dupatta + cobalt earrings"
+    },
+    "color_blocking": {
+      "description": "Two contrasting solid colors in clear blocks",
+      "best_for_body_shapes": ["tubular", "rectangular"],
+      "example": "Solid red top + solid navy bottom"
+    },
+    "cultural_color_taboos_india": {
+      "white_only": "Reserved for funerals/mourning in many Hindu communities — be cautious for celebratory events",
+      "all_black": "Some communities consider inauspicious for weddings/religious events",
+      "yellow_haldi": "Associated with pre-wedding haldi function — context matters",
+      "red_bridal": "Strong bridal association — avoid pure red saree at someone else's wedding",
+      "green_eid": "Auspicious for Muslim festivals — culturally appreciated",
+      "white_saree_red_border": "Bengali traditional — appropriate for cultural events"
+    }
+  },
+
+  "pattern_scale_rules": {
+    "small_prints": {
+      "best_for": "Petite frames; small accessories; office-appropriate; subtle classroom looks",
+      "examples": ["Pinpoint dots", "Tiny florals", "Micro-checks", "Pinstripes"]
+    },
+    "medium_prints": {
+      "best_for": "Average frames; most occasions; versatile",
+      "examples": ["Medium florals", "Standard plaids", "Medium polka dots", "Paisley"]
+    },
+    "large_prints": {
+      "best_for": "Tall and broader frames; statement events; festive wear",
+      "examples": ["Bold florals", "Large geometric", "Big paisley", "Block prints"]
+    },
+    "scaling_principle": "Print size should match the size of the wearer's body frame. Petite + large print = overwhelmed. Tall + tiny print = lost detail."
+  },
+
+  "accessory_scale_rules": {
+    "watches_men": {
+      "petite_wrist_under_6.5_inches": "36-40mm case",
+      "average_wrist_6.5_to_7.5": "40-42mm case",
+      "large_wrist_above_7.5": "42-46mm case"
+    },
+    "earrings_women": {
+      "petite_5_3_under": "Studs to small drops; avoid chandelier",
+      "average_5_3_to_5_8": "Most styles work",
+      "tall_5_8_above": "Statement drops, longer chandeliers, bold studs"
+    },
+    "bag_proportions": {
+      "rule": "Body height ÷ 4 = ideal bag depth in inches (rough guide)",
+      "petite": "Small to medium structured bags",
+      "average": "Medium standard bags",
+      "tall": "Medium to large bags; small bags look proportionally tiny"
+    },
+    "belt_widths": {
+      "petite": "0.75 to 1.5 inches",
+      "average": "1 to 2 inches",
+      "tall": "1.5 to 3 inches"
+    },
+    "heel_heights_women": {
+      "petite_under_5_3": "2.5 to 4 inches optimal",
+      "average": "1 to 4 inches per occasion",
+      "tall_above_5_8": "Flats to 2 inches; tall heels often unnecessary"
+    }
+  },
+
+  "hair_texture_management": {
+    "type_1_straight": {
+      "1A_fine": {
+        "wash_frequency": "Every 1-2 days",
+        "products": ["Volumizing shampoo", "Lightweight conditioner", "Texturizing spray"],
+        "best_cuts": ["Layers for body", "Bobs", "Long with texture"],
+        "avoid": "Heavy conditioners; heavy oils that flatten"
+      },
+      "1B_medium": {
+        "wash_frequency": "Every 2-3 days",
+        "products": ["Standard shampoo/conditioner", "Light serum"],
+        "best_cuts": ["Most cuts work", "Layered styles"]
+      },
+      "1C_coarse": {
+        "wash_frequency": "Every 3-4 days",
+        "products": ["Smoothing shampoo", "Rich conditioner", "Heavier serum"],
+        "best_cuts": ["Layered cuts", "Long lengths", "Avoid blunt short cuts"]
+      }
+    },
+    "type_2_wavy": {
+      "2A_loose": {
+        "wash_frequency": "2-3 times per week",
+        "products": ["Sulfate-free shampoo", "Curl cream", "Light leave-in"],
+        "techniques": ["Plopping with t-shirt", "Diffuse drying"]
+      },
+      "2B_defined_waves": {
+        "wash_frequency": "2-3 times per week",
+        "products": ["Curl-defining cream", "Anti-frizz serum", "Light gel"],
+        "techniques": ["Scrunching", "Air-drying", "No combing dry"]
+      },
+      "2C_strong_S_pattern": {
+        "wash_frequency": "1-2 times per week",
+        "products": ["Heavier creams", "Curl gels", "Coconut oil treatment"],
+        "techniques": ["Pineapple at night", "Silk pillowcase"]
+      }
+    },
+    "type_3_curly": {
+      "3A_loose_curls": {
+        "wash_frequency": "Once per week",
+        "products": ["Curl cream", "Leave-in conditioner", "Curl-defining gel"],
+        "techniques": ["Rake and shake method", "Scrunching gel"]
+      },
+      "3B_springy_curls": {
+        "wash_frequency": "Once per week",
+        "products": ["Heavy curl cream", "Custard or gel", "Deep conditioning weekly"],
+        "techniques": ["Praying hands method", "Diffuse drying"]
+      },
+      "3C_tight_corkscrews": {
+        "wash_frequency": "Once every 7-10 days",
+        "products": ["Rich curl butter", "Custard", "Weekly deep conditioning"],
+        "techniques": ["Finger detangling only", "No combing", "Protective styles"]
+      }
+    },
+    "type_4_coily": {
+      "4A_defined_coils": {
+        "wash_frequency": "Once every 7-10 days",
+        "products": ["Heavy butters", "Castor oil", "Deep conditioning weekly"],
+        "techniques": ["LCO method (Liquid-Cream-Oil)", "Protective styling"]
+      },
+      "4B_Z_pattern": {
+        "wash_frequency": "Once every 10-14 days",
+        "products": ["Shea butter", "Coconut oil", "Heavy moisturizers"],
+        "techniques": ["Twist-outs", "Bantu knots", "Protective styling primary"]
+      },
+      "4C_tightly_packed": {
+        "wash_frequency": "Once every 14 days",
+        "products": ["Heaviest moisturizers", "Sealing oils", "Pre-poo treatment"],
+        "techniques": ["Always protective styles", "Minimal manipulation", "Silk wraps"]
+      }
+    },
+    "greying_management": {
+      "early_grey_under_30": {
+        "options": ["Embrace naturally with confidence", "Henna for natural tone", "Subtle highlights to blend"],
+        "salon_cadence": "Every 6-8 weeks if coloring"
+      },
+      "moderate_grey_30_50": {
+        "options": ["Color (henna/chemical)", "Embrace with statement style", "Highlights for blending"],
+        "salon_cadence": "Every 4-6 weeks"
+      },
+      "predominantly_grey_50_plus": {
+        "options": ["Full coverage color", "Embrace silver fox confidence", "Quality silver-toned care products"],
+        "considerations": "Silver/grey hair pairs beautifully with cool-toned wardrobe"
+      }
+    }
+  },
+
+  "grooming_standards_detailed": {
+    "men_facial_hair": {
+      "clean_shave": {
+        "best_for_face_shapes": ["heart", "diamond"],
+        "maintenance": "Daily; quality razor; pre-shave oil + post-shave balm",
+        "products_budget_under_500": ["Gillette Mach 3", "Nivea men foam", "Park Avenue aftershave"]
+      },
+      "stubble_3_to_5mm": {
+        "best_for_face_shapes": ["all"],
+        "maintenance": "Trimmer every 2-3 days; uniform length",
+        "tools": ["Philips trimmer with adjustable comb", "Beard oil for skin"]
+      },
+      "boxed_beard": {
+        "best_for_face_shapes": ["square (softens)", "oval", "round (with length)"],
+        "maintenance": "Weekly trim; daily comb; beard oil; defined cheek line",
+        "salon_cadence": "Monthly professional shape-up recommended"
+      },
+      "goatee": {
+        "best_for_face_shapes": ["round", "square", "diamond"],
+        "maintenance": "Twice-weekly trimming; clean lines",
+        "considerations": "Pairs well with formal wear"
+      },
+      "full_beard": {
+        "best_for_face_shapes": ["heart", "oval"],
+        "maintenance": "Weekly trim; daily oil; combing; mustache trim"
+      },
+      "sikh_kesh_practice": {
+        "respect": "Hair and beard not to be cut per religious practice",
+        "grooming_within_practice": ["Daily oil for beard", "Tying beard neatly (gutta or fixer)", "Beard combing", "Mustache styling"]
+      }
+    },
+    "men_eyebrows": {
+      "maintenance": "Trim monthly; remove unibrow stragglers; do not over-pluck",
+      "salon_or_self": "Self-maintenance OK; salon every 2-3 months for shaping"
+    },
+    "men_skincare_basic": {
+      "morning": ["Cleanser", "Moisturizer with SPF 30+"],
+      "evening": ["Cleanser", "Moisturizer or lightweight serum"],
+      "weekly": "Exfoliate once",
+      "budget_products": ["Plum Green Tea face wash (₹345)", "Neutrogena oil-free moisturizer (₹350)", "Lakme Sun Expert SPF 50 (₹325)"]
+    },
+    "women_eyebrows": {
+      "maintenance": "Shape every 3-4 weeks at salon; daily comb upward",
+      "shape_by_face_shape": {
+        "oval": "Soft natural arch",
+        "round": "High arch to add length",
+        "square": "Soft arch to soften jaw",
+        "heart": "Soft arch, not too thin",
+        "oblong": "Straighter brow to widen face",
+        "diamond": "Slightly fuller for balance",
+        "triangle": "Bold high arches"
+      },
+      "salon_cost_india": "₹100-300 per session at standard salon"
+    },
+    "women_skincare_basic_indian_climate": {
+      "morning": ["Gentle cleanser", "Vitamin C serum (optional)", "Moisturizer", "Sunscreen SPF 50+"],
+      "evening": ["Cleanser", "Toner", "Moisturizer or night cream"],
+      "weekly": ["Exfoliate 1-2 times", "Hydrating mask once"],
+      "monthly_salon": ["Facial recommended for deep cleanse"],
+      "budget_products": ["Plum Green Tea kit (₹600 set)", "Lakme Absolute Perfect Radiance (₹400)", "Neutrogena Ultra Sheer SPF 50 (₹400)"]
+    },
+    "women_makeup_classroom_appropriate": {
+      "philosophy": "Subtle, polished, professional — never distracting from teaching",
+      "5_minute_routine": [
+        "Tinted moisturizer or BB cream",
+        "Concealer for under-eye",
+        "Subtle blush",
+        "Brown or black eyeliner (thin line)",
+        "Mascara (one coat)",
+        "Tinted lip balm or nude lipstick"
+      ],
+      "avoid_in_classroom": ["Heavy contouring", "Smoky eyes", "Bright lipstick", "Glittery eyeshadow", "False lashes"],
+      "budget_products": ["Lakme 9 to 5 BB cream (₹325)", "Maybelline Fit Me concealer (₹400)", "Lakme blush (₹300)", "Faces Canada eyeliner (₹275)"]
+    },
+    "nails": {
+      "men": "Trimmed weekly; clean under nails; cuticles maintained; clear coat optional",
+      "women_classroom": "Trimmed; if polished — neutral colors (nude, soft pink, clear); no chipping; no neon for classroom",
+      "frequency": "Manicure every 2-3 weeks recommended; can be DIY"
+    },
+    "teeth_breath": {
+      "daily": "Brushing 2x; flossing once; tongue cleaning",
+      "freshness": "Mouthwash; mints/mouth fresheners post-meal",
+      "professional": "Dental cleaning every 6 months"
+    },
+    "body_odor_management": {
+      "daily": "Deodorant or antiperspirant before class",
+      "climate_specific_hot_humid": "Antiperspirant + change of inner-shirt for evening sessions",
+      "products": ["Nivea men", "Park Avenue", "Vaseline", "Engage", "Body Shop"]
+    }
+  },
+
+  "cultural_attire_styling": {
+    "hijab_styling": {
+      "color_coordination": "Match hijab to outfit's accent color OR neutral that complements skin tone palette",
+      "fabric_by_climate": {
+        "hot_humid": ["Cotton", "Modal", "Lightweight chiffon"],
+        "cool_climate": ["Wool blends", "Heavier georgette", "Pashmina"]
+      },
+      "drape_styles": ["Turkish style (under chin, pinned)", "Square hijab (formal)", "Shawl style (casual)", "Khaleeji (with volumizer)"],
+      "face_shape_drape": {
+        "round": "Pin to one side creating asymmetry; avoid full coverage equally on both sides",
+        "long_oblong": "Looser drape adding width to face",
+        "square": "Soft draping with curves",
+        "heart": "Volume at chin level with style"
+      },
+      "professional_classroom_recommendation": "Solid neutral color hijab with subtle textures; well-pinned; no excessive volume"
+    },
+    "turban_sikh_styling": {
+      "color_coordination": "Turban color can match shirt OR contrast as accent — avoid clashing with tie",
+      "fabric": "Voil cotton (most common); silk for special events",
+      "professional_classroom_recommendation": "Solid colors (navy, maroon, black, white, cream) for daily; coordinated with outfit",
+      "tying_styles": ["Dumalla (full)", "Patiala Shahi", "Pagri (formal)"],
+      "salon_help": "Can have professional tie weekly for clean look",
+      "beard_coordination": "Beard kept tied (gutta) for professional settings"
+    },
+    "saree_only_preference": {
+      "daily_classroom_sarees": ["Cotton", "Lightweight handloom", "Linen blends"],
+      "occasion_sarees": ["Tussar silk (semi-formal)", "Kanjeevaram (formal)", "Banarasi (festive)"],
+      "blouse_designs_classroom": ["Tailored cotton blouses", "3/4 sleeve high neck or boat neck", "Minimal embellishment"],
+      "petticoat_quality_advice": "Match color to saree base; quality cotton; proper length",
+      "saree_pin_essentials": ["Safety pins for pleats and pallu", "Fall stitching", "Belt for modern drapes"]
+    },
+    "veshti_dhoti_traditional": {
+      "occasions": ["Festivals", "Religious events", "Cultural events"],
+      "modern_acceptance": "Increasingly accepted in formal settings in South Indian institutions",
+      "color_coordination": "White cream as base; angavastram (shawl) provides accent color",
+      "fabric": "Pure cotton for daily; silk for special occasions"
+    },
+    "modest_dress_general": {
+      "principle": "Coverage with style; minimal exposure of arms/legs/cleavage",
+      "options_women": ["Long-sleeve kurtas with palazzo", "Abaya in solid colors", "Maxi dresses with high necklines", "Long skirts with full-sleeve tops"],
+      "options_men": ["Full-sleeve shirts always", "Trousers (no shorts)", "Modest fit (not tight)"]
+    }
+  },
+
+  "capsule_wardrobe_templates": {
+    "_instructions": "30-day, 60-day, 90-day wardrobe builds calibrated to budget. Items should mix-and-match to create 15+ outfits.",
+    "men_30_day_starter_under_2k_per_month": {
+      "tops": ["2 white shirts", "1 light blue shirt", "1 cotton solid-color polo"],
+      "bottoms": ["2 charcoal trousers", "1 beige chinos"],
+      "outerwear": ["1 navy blazer (single most important investment)"],
+      "shoes": ["1 brown derby OR oxford"],
+      "accessories": ["1 brown leather belt", "1 watch (existing/budget)", "2 ties"],
+      "total_estimated_cost": "₹6000-8000 across 4-6 months",
+      "outfits_possible": "15+ classroom-appropriate combinations"
+    },
+    "men_60_day_business_casual_5k_to_10k": {
+      "tops": ["3 dress shirts (white, light blue, light pink)", "2 button-downs (subtle pattern)"],
+      "bottoms": ["3 trousers (charcoal, navy, beige)", "2 chinos"],
+      "outerwear": ["1 navy blazer", "1 gray blazer"],
+      "shoes": ["1 oxford", "1 derby", "1 loafer"],
+      "accessories": ["2 belts (brown, black)", "1 quality watch", "4 ties", "2 pocket squares"],
+      "total_estimated_cost": "₹15000-25000",
+      "brands": ["Pantaloons", "Westside", "Allen Solly sale", "Van Heusen sale"]
+    },
+    "women_30_day_starter_indian_under_2k_per_month": {
+      "tops_kurtas": ["2 cotton kurtas (one beige/cream, one solid color)", "1 anarkali for special days"],
+      "bottoms": ["2 palazzos (white, complementary color)", "1 churidar/leggings"],
+      "dupattas": ["2 dupattas in coordinated colors"],
+      "blouses_for_saree": ["2 standard tailored blouses if saree-wearing"],
+      "shoes": ["1 nude flats", "1 block heel"],
+      "accessories": ["1 statement earring set", "1 watch", "2 daily bindis (if applicable)"],
+      "total_estimated_cost": "₹5000-7000 across 4-6 months",
+      "brands": ["FBB", "Reliance Trends", "Local tailor", "W for Woman sale"]
+    },
+    "women_60_day_business_casual_5k_to_10k": {
+      "tops_kurtas": ["3 work-appropriate kurtas", "1 anarkali", "1 Western blouse"],
+      "bottoms": ["3 palazzos", "1 trouser", "1 churidar"],
+      "western_options": ["1 sheath dress", "1 kurti-palazzo set"],
+      "outerwear": ["1 lightweight blazer or shrug"],
+      "sarees": ["2 cotton sarees with tailored blouses (if saree-wearing)"],
+      "shoes": ["1 closed-toe pump", "1 nude flat", "1 block heel"],
+      "accessories": ["2 statement earrings", "1 quality watch", "2 bags (1 tote, 1 cross-body)"],
+      "total_estimated_cost": "₹15000-25000",
+      "brands": ["Pantaloons", "Westside", "Biba", "W for Woman", "Aurelia"]
+    }
+  },
+
+  "posture_body_language": {
+    "instructor_classroom_stance": {
+      "feet": "Shoulder-width apart for stability and authority",
+      "weight_distribution": "Even on both feet; avoid hip-cocking (looks casual)",
+      "spine": "Tall, neutral curve, ribs not flared",
+      "shoulders": "Down and back; relaxed not raised",
+      "head": "Level; chin parallel to ground",
+      "hands": "Relaxed at sides; gesture purposefully when speaking; avoid fidgeting"
+    },
+    "common_posture_issues": {
+      "forward_head": {
+        "cause": "Phone/laptop use; long teaching hours",
+        "fix": "Daily 5-min chin tucks (10 reps); awareness exercise; ergonomic setup"
+      },
+      "rounded_shoulders": {
+        "cause": "Same as above; lack of upper back strength",
+        "fix": "Daily wall angels (10 reps); doorway stretches; rear-delt exercises"
+      },
+      "hip_tilt_anterior": {
+        "cause": "Weak core, tight hip flexors",
+        "fix": "Hip flexor stretches; glute strengthening; planks"
+      },
+      "swayback": {
+        "cause": "Weak core, postural habit",
+        "fix": "Posterior pelvic tilt awareness; core strengthening"
+      }
+    },
+    "five_minute_daily_routine": [
+      "Chin tucks - 10 reps",
+      "Wall angels - 10 reps",
+      "Doorway chest stretch - 30 seconds each side",
+      "Cat-cow flow - 10 reps",
+      "Standing tall with deep breathing - 1 minute"
+    ],
+    "sitting_posture_office": {
+      "feet": "Flat on floor",
+      "knees": "90 degrees, slightly below hip level",
+      "lower_back": "Supported by chair lumbar curve",
+      "shoulders": "Relaxed",
+      "screen_height": "Top of screen at eye level",
+      "break_cadence": "Stand and move every 30-45 minutes"
+    },
+    "speaking_body_language": {
+      "eye_contact": "3-5 second engagement with each section of room; rotate naturally",
+      "gestures": "Open palms; use hands to emphasize points; avoid pointing fingers",
+      "facial_expression": "Match content; smile at appropriate moments; nod when students respond",
+      "movement": "Move with purpose; avoid pacing; plant feet when making key points",
+      "vocal": "Vary pitch and pace; pause for emphasis; avoid filler words"
+    }
+  },
+
+  "headshot_photo_guidance": {
+    "preparation": {
+      "night_before": ["Get 7+ hours sleep", "Hydrate well", "Avoid salt-heavy dinner (puffiness)", "Lay out outfit"],
+      "morning_of": ["Standard skincare", "Subtle makeup (women)/clean shave or trimmed (men)", "Hair styled fresh", "Eat light meal"]
+    },
+    "outfit_choice": {
+      "men": "L2-L3 — solid color shirt (light blue, white, soft pink), blazer optional, simple collar; avoid busy patterns near face",
+      "women": "L2-L3 — solid color top in personal palette, clean neckline (V-neck, scoop, modest), avoid busy patterns/heavy embellishment near face"
+    },
+    "color_strategy": "Wear colors from your personal palette near face; avoid white-on-white (washes out) or all-black (loses dimension)",
+    "pose_by_face_shape": {
+      "oval": "Slight chin tilt down; natural three-quarter angle",
+      "round": "Three-quarter angle; chin slightly forward and down",
+      "square": "Slight angle softens jaw; avoid straight-on",
+      "heart": "Forehead slightly tilted down; chin forward",
+      "oblong": "Straight-on or slight angle; avoid chin-down",
+      "diamond": "Three-quarter angle softens cheekbones",
+      "triangle": "Slight angle; emphasize forehead/eyes"
+    },
+    "expression": "Genuine soft smile (eyes engaged); avoid teeth showing in too-wide smile for corporate; gentle approachable",
+    "background": "Plain neutral (gray, off-white, soft blue); avoid patterns or distracting elements",
+    "lighting": "Soft natural light from front; avoid harsh overhead; window light (not direct sun) is ideal",
+    "common_mistakes": ["Phone-quality photos for professional headshot", "Busy backgrounds", "Crooked posture", "Unnatural expression", "Filters that distort"]
+  },
+
+  "edge_case_handlers": {
+    "pregnancy": {
+      "trigger": "user.is_pregnant === true",
+      "behavior": "Skip body shape analysis. Show pregnancy-friendly recommendations: empire waist, A-line, soft drapes, comfortable fabrics. Focus modules: face, hair, skin tone, color palette, accessories.",
+      "language_overrides": "No 'slimming' or 'figure-defining' language. Use 'comfortable', 'flattering', 'celebratory'.",
+      "trimester_specific": {
+        "first_trimester": "Standard maternity not needed; focus on comfort with stretchy waistbands",
+        "second_trimester": "Empire waist, A-line, maxi dresses; maternity wear introduction",
+        "third_trimester": "Full maternity wear; comfort priority; simple elegant pieces"
+      }
+    },
+    "post_partum": {
+      "trigger": "user.post_partum_months < 6",
+      "behavior": "Forgiving silhouettes; empire waist; wraps; avoid recommendations to return to pre-pregnancy size; honor the body's recovery",
+      "language_overrides": "Strong avoidance of weight loss/return-to-shape language"
+    },
+    "recent_weight_change": {
+      "trigger": "user reports weight change > 5kg in 3 months",
+      "behavior": "Run analysis but flag in result. Recommend re-assessment in 2 months. Suggest alteration-bias over replacement.",
+      "language_overrides": "No mention of weight loss/gain in recommendations."
+    },
+    "hijab_wearer": {
+      "trigger": "user.cultural_attire includes 'hijab'",
+      "behavior": "Face shape uses visible facial features only. Replace hairstyle module with hijab styling module. Necklines guidance applies to outer layer only (modest necklines underneath).",
+      "modules_off": ["hairstyle"],
+      "modules_added": ["hijab_styling"]
+    },
+    "sikh_turban_beard": {
+      "trigger": "user.cultural_attire includes 'turban'",
+      "behavior": "Face shape uses available features. Add turban color/fabric coordination. Beard recommendations respect Kesh practice (no shaving/trimming recommendation).",
+      "modules_added": ["turban_coordination", "kesh_friendly_grooming"]
+    },
+    "saree_only_preference": {
+      "trigger": "user.wardrobe_pref === 'indian' AND saree-priority === true",
+      "behavior": "All Western wear modules suppressed. Deep saree expertise activated.",
+      "modules_off": ["western_formals"],
+      "modules_intensified": ["saree_drape_styles_detailed", "blouse_design", "dupatta_styling"]
+    },
+    "veshti_dhoti_only": {
+      "trigger": "user.wardrobe_pref === 'indian_traditional_male'",
+      "behavior": "Western trouser modules suppressed. Detailed dhoti/veshti styling activated.",
+      "modules_off": ["western_trouser_recommendations"],
+      "modules_added": ["veshti_styling_detailed"]
+    },
+    "wheelchair_user": {
+      "trigger": "user.mobility === 'wheelchair'",
+      "behavior": "Body shape adjusted for seated posture. Recommendations weighted to upper body. Trouser length and break rules updated for seated wear. Skirt length adjusted.",
+      "modules_modified": ["body_shape", "outfit_fit", "trouser_length"]
+    },
+    "limb_difference": {
+      "trigger": "user.limb_difference === true (specify limb)",
+      "behavior": "Sensitivity in language. Sleeve and trouser modifications offered. Tailoring recommendations strong.",
+      "language_priority": "Empowering language; focus on what works"
+    },
+    "skin_conditions_visible": {
+      "trigger": "user reports visible skin conditions (vitiligo, severe acne, eczema, scars)",
+      "behavior": "Avoid prescriptive skincare medical advice. Refer to dermatologist. Focus on outfit and color choices that build confidence. Color theory becomes especially important.",
+      "language_priority": "Confidence-building; never problem-framing"
+    },
+    "budget_under_2k": {
+      "trigger": "user.budget_bucket === 'under_2k'",
+      "behavior": "Capsule wardrobe of 7 items maximum. Second-hand and local tailor sourcing tips. Alteration-over-replacement bias. Free posture and grooming routines emphasized over purchases.",
+      "shopping_list_max_items": 7,
+      "preferred_brands": ["Local tailor", "FBB", "Reliance Trends basics"]
+    },
+    "tier_2_city_availability": {
+      "trigger": "user.campus.city is tier-2",
+      "behavior": "Bias recommendations to widely-available brands. Online shopping links (Myntra, Ajio, Flipkart) provided. Avoid niche international references.",
+      "preferred_brands": ["Pantaloons", "Westside", "Reliance Trends", "FBB", "Max", "Local tailor", "Online: Myntra, Ajio"]
+    },
+    "hot_humid_climate": {
+      "trigger": "user.climate_zone in ['hyderabad_summer', 'chennai', 'coastal', 'kolkata_summer']",
+      "behavior": "Cotton/linen bias. Light colors permitted at L2. Sweat-management tips. Inner-cotton-vest for shirts. Antiperspirant emphasis.",
+      "fabric_priority": ["cotton", "linen", "rayon", "modal"]
+    },
+    "cool_climate": {
+      "trigger": "user.climate_zone in ['bangalore_winter', 'pune_winter', 'delhi_winter']",
+      "behavior": "Layering module activated. Cardigan/blazer essential. Wool blends introduced.",
+      "fabric_additions": ["wool blends", "cashmere blends", "thicker cottons"]
+    },
+    "low_confidence_body_shape": {
+      "trigger": "body_shape analysis confidence < 60",
+      "behavior": "Show two closest shapes. Ask user clarification questions about shopping experience.",
+      "questions": [
+        "When you shop, do tops fit easily but bottoms feel tight, or vice versa?",
+        "Where do you usually need alterations on store-bought clothing?",
+        "Do you have a defined waist when you stand straight?"
+      ]
+    },
+    "nonbinary_user": {
+      "trigger": "user.gender === 'NB' or user requests gender-neutral framing",
+      "behavior": "Allow user to pick from M and F rulesets, or both. Use ungendered language in playbook. Style personality module especially important here.",
+      "modules_emphasized": ["style_personalities", "color_palette"]
+    },
+    "transgender_user": {
+      "trigger": "user.is_transgender === true",
+      "behavior": "Sensitivity prompt at onboarding. Allow user to choose ruleset that matches their expression. Private mode default. Honor their stated gender for all recommendations.",
+      "private_mode_default": true
+    },
+    "very_short_under_5_feet": {
+      "trigger": "user.height_inches < 60",
+      "behavior": "Petite styling priority. Pattern scale to small. Heel height 2.5-4 inches recommended. Monochromatic dressing. Avoid oversized accessories.",
+      "module_added": "petite_styling"
+    },
+    "very_tall_above_6_feet": {
+      "trigger": "user.height_inches > 72 (women) or > 76 (men)",
+      "behavior": "Tall styling priority. Pattern scale medium-large. Long lengths preferred. Maxi dresses, long jackets, full-length trousers.",
+      "module_added": "tall_styling"
+    }
+  },
+
+  "language_safety_rules": {
+    "_instructions": "These phrases must NEVER appear in any output. AI orchestrator validates against this list before returning to user.",
+    "forbidden_phrases": [
+      "lose weight",
+      "weight loss",
+      "shed pounds",
+      "fat",
+      "skinny",
+      "fairness",
+      "fair skin",
+      "lighten skin",
+      "skin lightening",
+      "skin whitening",
+      "problem area",
+      "flaw",
+      "hide your",
+      "camouflage your",
+      "minimize your bust",
+      "look thinner",
+      "appear smaller",
+      "BMI",
+      "obese",
+      "overweight",
+      "chubby",
+      "dark skin (in negative context)",
+      "back to your old size",
+      "bounce back"
+    ],
+    "preferred_alternatives": {
+      "slimming": "elongating",
+      "hide": "balance",
+      "minimize": "balance",
+      "flaw": "feature",
+      "problem area": "area to balance",
+      "fair": "even-toned",
+      "fairer": "more luminous",
+      "thin": "lean",
+      "lose weight": "(do not use; reframe entirely)",
+      "weight loss": "(do not use; reframe entirely)",
+      "your figure": "your shape",
+      "flattering (your size)": "flattering (you)"
+    }
+  },
+
+  "brand_recommendations_india": {
+    "budget_under_2k": {
+      "men": ["Local tailor", "FBB", "Max Fashion", "Reliance Trends", "Westside basics"],
+      "women": ["Local tailor", "FBB", "Max Fashion", "Reliance Trends basics", "W for Woman sale"]
+    },
+    "budget_2k_5k": {
+      "men": ["Pantaloons", "Westside", "Lifestyle", "Allen Solly sale", "Van Heusen sale", "Park Avenue sale"],
+      "women": ["Pantaloons", "Westside", "Lifestyle", "W for Woman", "Aurelia", "Fabindia (sale)", "Biba sale"]
+    },
+    "budget_5k_10k": {
+      "men": ["Allen Solly", "Van Heusen", "Park Avenue", "Marks & Spencer", "Raymond's ready-to-wear"],
+      "women": ["Fabindia", "Biba", "Global Desi", "W for Woman", "Marks & Spencer", "Indya"]
+    },
+    "budget_over_10k": {
+      "men": ["Tata CLiQ Luxury", "Designer wear", "Bespoke tailoring", "Raymond's Made-to-Measure", "Louis Philippe Premium"],
+      "women": ["Anita Dongre Pinkcity", "Good Earth", "Designer wear at Aza/Ogaan", "Pernia's Pop-up Shop"]
+    },
+    "online_aggregators": {
+      "men_and_women": ["Myntra", "Ajio", "Flipkart Fashion", "Tata CLiQ", "Amazon Fashion India"],
+      "indian_wear_focus": ["Mirraw", "Utsav Fashion", "Fashionista", "Kalki Fashion"]
+    },
+    "trusted_local_tailors_advice": "Most reliable for fit; build relationship with one tailor; alterations cost ₹100-500 per piece typically; full custom tailoring ₹600-3000 per piece"
+  },
+
+  "occasion_calendar_india": {
+    "convocation_seasons": ["May", "December"],
+    "wedding_seasons_north_india": ["November", "December", "January", "February"],
+    "wedding_seasons_south_india": ["April", "May", "June", "August", "September"],
+    "wedding_seasons_universal": ["November", "December", "January", "February", "May"],
+    "festival_calendar": {
+      "diwali": "October-November (varies)",
+      "holi": "March",
+      "eid_ul_fitr": "Varies (lunar calendar)",
+      "eid_ul_adha": "Varies (lunar calendar)",
+      "pongal_makar_sankranti": "January 14-15",
+      "ugadi": "March-April (Telugu New Year)",
+      "bonalu": "July-August (Telangana-specific)",
+      "bathukamma": "September-October (Telangana-specific)",
+      "christmas": "December 25",
+      "ganesh_chaturthi": "August-September",
+      "navratri_dussehra": "September-October",
+      "raksha_bandhan": "August",
+      "krishna_janmashtami": "August-September",
+      "karva_chauth": "October-November",
+      "good_friday_easter": "March-April"
+    },
+    "academic_calendar_nxtwave": {
+      "convocation_planning_window": "April (for May), October (for December)",
+      "industry_visit_peak": "October-November, February-March",
+      "parent_meeting_typical": "Quarterly — January, April, July, October",
+      "summer_break": "May-June (lighter dress code potential)",
+      "new_batch_intake": "July-August (formal welcome events)"
+    }
+  },
+
+  "instructor_specific_contexts": {
+    "_meta": "NxtWave-specific styling considerations for the NIAT instructor role",
+    "online_class_dressing": {
+      "principle": "Top half matters most; bottom half can be casual",
+      "color_strategy": "Solid colors near face; avoid busy patterns, greens (chroma key issues), pure white (overexposes), pure black (loses detail)",
+      "best_solid_colors_camera": ["Soft blue", "Burgundy", "Olive", "Soft pink", "Charcoal", "Navy"],
+      "background_coordination": "Outfit color should complement classroom/home background; not blend in",
+      "lighting_consideration": "Wear colors that work in artificial light, not just daylight"
+    },
+    "industry_visit_dressing": {
+      "principle": "Match or slightly exceed the host industry's formality",
+      "tech_companies": "L2 — business casual; trousers, button-down, optional blazer",
+      "banking_finance": "L3 — full suit and tie",
+      "consulting": "L3 — suit",
+      "manufacturing": "L2 — business casual; closed-toe shoes essential",
+      "government_psu": "L3 — formal; conservative colors"
+    },
+    "parent_meeting_dressing": {
+      "principle": "Trustworthy, approachable, professional",
+      "men": "L2 — trousers, button-down, optional blazer; conservative colors",
+      "women": "L2 — modest cotton/silk saree OR full kurta-palazzo set OR conservative Western formal",
+      "avoid": "Bright bold colors, heavy makeup, casual fits"
+    },
+    "convocation_dressing": {
+      "principle": "Celebratory but dignified; representing the institution",
+      "men": "L3-L4 — suit and tie; bandhgala for traditional events",
+      "women": "L3 — silk saree (Kanjeevaram, Banarasi for special) OR formal Indo-Western",
+      "ceremonial_robes": "Worn over formal wear if required"
+    }
+  }
+}
