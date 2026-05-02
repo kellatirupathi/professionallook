@@ -7,7 +7,9 @@ import { normalizeRelevantReports } from "./lib/reporting";
 import { composeEditorialReport } from "./lib/composer";
 
 const STORAGE_KEY = "professional-fashion-report-chats";
-const IMAGE_REQUEST_DELAY_MS = 65000;
+// 3 RPM allowance for gpt-image-1 + each call takes ~20-30s anyway, so no
+// artificial delay between images is needed.
+const IMAGE_REQUEST_DELAY_MS = 0;
 
 const CONVERSATION_STARTERS = [
   {
