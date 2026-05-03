@@ -2,13 +2,34 @@ import {
   createAnalysisPrompt,
   createDalle3Prompt,
   createEditPrompt,
+  createFullPosterPrompt,
 } from "./reporting";
 import { generateWithHuggingFace } from "./huggingface";
+import {
+  analyzeImageWithGemini,
+  generateImageWithGemini,
+  chatStreamWithGemini,
+} from "./gemini";
 
 const OPENAI_BASE_URL = "https://api.openai.com/v1";
 
 // ── Provider + models from .env (with safe defaults) ───────────────────────
-const IMAGE_PROVIDER = (import.meta.env.VITE_IMAGE_PROVIDER || "openai")
+// VITE_IMAGE_PROVIDER:    "gemini" | "openai" | "huggingface"
+// VITE_ANALYSIS_PROVIDER: "gemini" | "openai"   (default: gemini)
+// VITE_CHAT_PROVIDER:     "gemini" | "openai"   (default: gemini)
+const IMAGE_PROVIDER = (import.meta.env.VITE_IMAGE_PROVIDER || "gemini")
+  .toLowerCase()
+  .trim();
+const ANALYSIS_PROVIDER = (import.meta.env.VITE_ANALYSIS_PROVIDER || "gemini")
+  .toLowerCase()
+  .trim();
+const CHAT_PROVIDER = (import.meta.env.VITE_CHAT_PROVIDER || "gemini")
+  .toLowerCase()
+  .trim();
+// "fullposter" → AI generates the entire editorial poster in one call (faces +
+// thumbnails + text + footer). "composite" → AI generates only the hero face,
+// html2canvas wraps it in a designed template.
+export const GENERATION_MODE = (import.meta.env.VITE_GENERATION_MODE || "fullposter")
   .toLowerCase()
   .trim();
 const ANALYSIS_MODEL = import.meta.env.VITE_OPENAI_ANALYSIS_MODEL || "gpt-4.1-mini";
@@ -70,6 +91,9 @@ async function requestJson(endpoint, body) {
 }
 
 export async function analyzeImage({ imageDataUrl, instructions, knowledgeText }) {
+  if (ANALYSIS_PROVIDER === "gemini") {
+    return analyzeImageWithGemini({ imageDataUrl, instructions, knowledgeText });
+  }
   const payload = await requestJson("/responses", {
     model: ANALYSIS_MODEL,
     input: [
@@ -142,10 +166,15 @@ async function generateWithOpenAIEdit({ reportType, analysis, imageDataUrl }) {
   // so we pass it with a .png filename — the API treats input as raster.
   const file = new File([blob], "portrait.png", { type: "image/png" });
 
+  const prompt =
+    GENERATION_MODE === "fullposter"
+      ? createFullPosterPrompt({ reportType, analysis })
+      : createEditPrompt({ reportType, analysis });
+
   const form = new FormData();
   form.append("model", OPENAI_IMAGE_MODEL);
   form.append("image", file);
-  form.append("prompt", createEditPrompt({ reportType, analysis }));
+  form.append("prompt", prompt);
   form.append("n", "1");
   form.append("size", "1536x1024");
   form.append("quality", "high");
@@ -190,6 +219,9 @@ Tone: concise (2-5 sentences), professional, helpful, friendly. Use line breaks 
 If a question genuinely needs the user's portrait (e.g. "what colour suits me?", "what hairstyle for my face?"), warmly suggest uploading one with the + button.`;
 
 export async function chatStream({ userMessage, history = [], onChunk }) {
+  if (CHAT_PROVIDER === "gemini") {
+    return chatStreamWithGemini({ userMessage, history, onChunk });
+  }
   const recentHistory = history
     .filter((m) => m && typeof m.content === "string" && m.content.trim() && !m.type)
     .slice(-10)
@@ -272,6 +304,20 @@ export async function chatStream({ userMessage, history = [], onChunk }) {
 // When `imageDataUrl` is supplied AND provider=openai, uses the /edits
 // endpoint with the user's portrait → same face across all categories.
 export async function generateReportImage({ reportType, analysis, imageDataUrl }) {
+  if (IMAGE_PROVIDER === "gemini") {
+    try {
+      const result = await generateImageWithGemini({
+        reportType,
+        analysis,
+        imageDataUrl,
+        mode: GENERATION_MODE,
+      });
+      return { ...result, provider: "gemini" };
+    } catch (err) {
+      throw new Error(`Gemini image generation failed: ${err.message}`);
+    }
+  }
+
   if (IMAGE_PROVIDER === "huggingface" || IMAGE_PROVIDER === "hf") {
     try {
       const result = await generateWithHuggingFace({

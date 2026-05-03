@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ChatWindow from "./components/ChatWindow";
 import ImageUploader from "./components/ImageUploader";
 import ReportSelector from "./components/ReportSelector";
-import { analyzeImage, chatStream, generateReportImage } from "./lib/openai";
+import { analyzeImage, chatStream, generateReportImage, GENERATION_MODE } from "./lib/openai";
 import { normalizeRelevantReports } from "./lib/reporting";
 import { composeEditorialReport } from "./lib/composer";
 
@@ -422,18 +422,20 @@ export default function App() {
           analysis: activeSession.analysis,
         });
 
-        // Step 2 (Path B): compose editorial poster around the AI hero
-        //   (title bar + hero + recommended panel + tips + avoid + footer).
+        // Step 2: in "composite" mode, wrap the AI hero in our editorial
+        // template via html2canvas. In "fullposter" mode, the AI already
+        // produced the entire poster — use it as-is.
         let finalImageUrl = result.imageUrl;
-        try {
-          finalImageUrl = await composeEditorialReport({
-            reportType,
-            heroImageUrl: result.imageUrl,
-            analysis: activeSession.analysis,
-          });
-        } catch (composeErr) {
-          // If composition fails, fall back to the raw AI hero.
-          console.warn("[runGeneration] compose failed:", composeErr.message);
+        if (GENERATION_MODE !== "fullposter") {
+          try {
+            finalImageUrl = await composeEditorialReport({
+              reportType,
+              heroImageUrl: result.imageUrl,
+              analysis: activeSession.analysis,
+            });
+          } catch (composeErr) {
+            console.warn("[runGeneration] compose failed:", composeErr.message);
+          }
         }
 
         patchBatchItems((items) =>
