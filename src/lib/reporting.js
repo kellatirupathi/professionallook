@@ -217,23 +217,27 @@ Negative: jeans, leggings, distressed denim, neon colours, oversized sunglasses,
 // ── Per-category edit instructions ─────────────────────────────────────────
 // These tell gpt-image-1's /edits endpoint how to restyle the portrait
 // without changing the person's identity.
+// Each instruction targets ONLY surrounding features (hair / glasses / beard /
+// clothes / accessories / layout). The face itself must be copied 1:1 from the
+// source. Wording is deliberately repetitive — gpt-image-1-mini lacks
+// input_fidelity, so the prompt is the only lever we have.
 const EDIT_INSTRUCTIONS = {
   "Hair Guide":
-    "Show the SAME PERSON with a clean, structured professional men's hairstyle: low/mid taper sides, natural volume on top (2-4 inches), kept off the forehead. Studio headshot, clean neutral background.",
+    "EDIT ONLY THE HAIR around the SAME PERSON's head. Apply a clean, structured professional men's hairstyle: low/mid taper sides, natural volume on top (2-4 inches), kept off the forehead. Do NOT touch the face, eyes, nose, mouth, jawline, ears, or skin. Studio headshot, clean neutral background. Face pixels must remain identical to the source.",
   "Spectacles Guide":
-    "Add tasteful professional rectangular or wayfarer spectacles in dark/tortoise frames to the SAME PERSON. Keep face, expression and skin tone unchanged. Studio headshot.",
+    "ADD ONLY a pair of tasteful professional rectangular or wayfarer spectacles in dark/tortoise frames as an OVERLAY on top of the SAME PERSON's face. Do NOT regenerate, smooth, or restructure the face. Keep eyes, eyebrows, nose, lips, jawline, skin tone and expression EXACTLY as in the source. Studio headshot.",
   "Face Shape Guide":
-    "Editorial studio portrait of the SAME PERSON, neutral expression, clean background, soft front lighting. Show clearly defined face structure. Do not alter facial features.",
+    "Re-render the SAME PERSON as an editorial studio portrait with neutral expression, clean background and soft front lighting. Do NOT alter ANY facial features — same eyes, nose, mouth, jaw, cheekbones, ears, skin tone. Only adjust lighting and background. Identity must be 1:1 with the source.",
   "Beard Guide":
-    "Show the SAME PERSON with a well-groomed defined-light beard, clean neckline two fingers above Adam's apple, even length (3-5 mm stubble). Studio headshot.",
+    "ADD ONLY a well-groomed defined-light beard to the SAME PERSON: clean neckline two fingers above Adam's apple, even length (3-5 mm stubble). Do NOT change the underlying face shape, jawline, lips, nose, eyes, skin tone or age. The beard is an overlay on the existing face. Studio headshot.",
   "Colour Analysis":
-    "Studio portrait of the SAME PERSON wearing a deep-jewel-tone shirt (navy, burgundy or deep green) that flatters their skin tone. Clean neutral background, soft lighting. Identity must be preserved.",
+    "EDIT ONLY THE CLOTHING. Dress the SAME PERSON in a deep-jewel-tone shirt (navy, burgundy or deep green). Face, hair, skin tone, eyes and expression must remain pixel-identical to the source. Clean neutral background, soft lighting.",
   "Dress Guide":
-    "Show the SAME PERSON in premium tailored business attire: navy or charcoal blazer, crisp white or light-blue shirt, dark tie, sharp shoulders, structured fit. Editorial studio shot.",
+    "EDIT ONLY THE CLOTHING AND SHOULDERS region. Dress the SAME PERSON in premium tailored business attire: navy or charcoal blazer, crisp white or light-blue shirt, dark tie, sharp shoulders, structured fit. Do NOT alter the face, hair, skin tone, eyes, mouth, jaw or expression in ANY way. Editorial studio shot.",
   "Accessories Guide":
-    "Show the SAME PERSON in formal attire wearing a classic metal-strap watch, subtle pocket square and leather belt. Refined, minimal accessories. Editorial studio shot.",
+    "ADD ONLY accessories to the SAME PERSON who is wearing formal attire: a classic metal-strap watch, a subtle pocket square and a leather belt. Do NOT change the face, hair, skin, body proportions or expression. Accessories are overlays on the existing image. Editorial studio shot.",
   "Footwear Guide":
-    "Editorial composition of the SAME PERSON in a tailored business suit, full-length or three-quarter shot, with polished black or dark-brown oxford or derby shoes clearly visible.",
+    "Compose the SAME PERSON in a tailored business suit, full-length or three-quarter shot, with polished black or dark-brown oxford or derby shoes clearly visible. The face must be IDENTICAL to the source — same eyes, nose, mouth, jaw, skin tone, hair. Only the body framing, suit and shoes are added.",
 };
 
 export function createEditPrompt({ reportType, analysis }) {
@@ -357,14 +361,33 @@ export function createFullPosterPrompt({ reportType, analysis }) {
   const presentation = analysis?.presentation ?? "professional adult";
   const base = FULL_POSTER_PROMPTS[reportType] ?? FULL_POSTER_PROMPTS["Hair Guide"];
 
-  return `${base}
+  return `IDENTITY-LOCK EDITORIAL POSTER.
+
+The source image shows a SPECIFIC REAL PERSON. Every face in the poster — the large hero on the left AND every small face in the recommended/avoid thumbnails on the right — must be UNMISTAKABLY THE SAME PERSON from the source.
+
+ABSOLUTE FACE-IDENTITY RULES (DO NOT VIOLATE):
+1. Copy the face directly from the source. Same eyes, same eye colour, same eyebrow shape, same nose shape & width, same lips, same chin, same jawline, same cheekbones, same ears.
+2. Skin tone, skin texture and undertone must match the source EXACTLY in every face shown.
+3. Age must match the source — do NOT make them younger, older, or more "model-like".
+4. Ethnicity must match the source — do NOT shift facial features toward a different ethnicity.
+5. Gender presentation must match the source.
+6. Natural hair colour must match the source unless the category specifically restyles hair.
+7. Do NOT smooth, slim, beautify, idealise or "improve" the face. Treat the face as a fixed reference.
+8. ALL face thumbnails (recommended + avoid) must be the SAME PERSON — only styling/hair/glasses/beard/clothes vary between them.
+9. NO generic stock-photo faces. NO illustrated/cartoon faces. NO SVG icons. Photorealistic only.
+10. A person who knows the source-image subject must immediately recognise them in EVERY face shown in the poster.
+
+POSTER LAYOUT:
+${base}
 
 GLOBAL RULES:
 - Premium editorial magazine quality. Crisp typography, clean layout, balanced composition.
-- Subject is ${presentation}.
-- Identity preservation is critical: every face shown must be unmistakably the SAME PERSON from the source portrait — same skin tone, eyes, nose, jaw, age, ethnicity, hair colour. Different styling, but same person.
-- Real photographic style — NOT cartoon, NOT illustration, NOT painted.
-- Professional studio lighting and neutral backgrounds for all sub-photos.`;
+- Subject: ${presentation}.
+- Real photographic style — NOT cartoon, NOT illustration, NOT painted, NOT 3D-rendered.
+- Professional studio lighting and neutral backgrounds for all face photos.
+- Product/object thumbnails (glasses frames, shoes, watches) may be illustrated product shots, but every FACE must be a photorealistic likeness of the source person.
+
+VERIFY before finalising: Are all faces in the poster the same person from the source? If not, regenerate.`;
 }
 
 // Compact prompt for dall-e-3 (4_000-char hard limit).

@@ -9,8 +9,8 @@
 *   application_code_dump.txt  (in repo root)
 */
 
-const fs = require("fs");
-const path = require("path");
+import fs from "node:fs";
+import path from "node:path";
 
 const ROOT = process.cwd();
 const OUTPUT_FILE = path.join(ROOT, "application_code_dump.txt");
